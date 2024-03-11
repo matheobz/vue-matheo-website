@@ -1,22 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+  <OrbBackground/>
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import OrbBackground from './components/OrbBackground.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    OrbBackground
   }
 }
 </script>
 
 <style>
 @import url('assets/styles/global.css');
-@import url('assets/styles/orb.css');
 @import url('assets/styles/fenetre.css');
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

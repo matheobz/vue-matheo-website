@@ -1,5 +1,7 @@
 <template>
 
+  <OrbBackground/>
+
   <img src="../assets/images/logo3.png" class="img-logo" alt="Logo">
     
     <section class="titre">
@@ -17,38 +19,7 @@
       </a>
     </div>
 
-    
-    <section class="fenetre-container">
-      <div class="fenetre">
-
-
-        <nav class="navbar">
-          <div class="logo">
-              <a href="#">Logo</a>
-          </div>
-          <ul class="nav-links">
-              <li><a href="#">Accueil</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">À propos</a></li>
-              <li><a href="#">Contact</a></li>
-              <li class="icons">
-                  <a href="#"><i class="fas fa-search"></i></a>
-                  <a href="#"><i class="fas fa-comments"></i></a>
-              </li>
-          </ul>
-      </nav>
-
-
-      <p class="fenetre-titre">Jaguar<br>Votre voiture<br>À votre ADN</p>
-
-      <div class="hexagon-btn">
-        <div class="hexagon">
-            <p class="arrow2">></p> <!-- Vous pouvez utiliser une icône ou un caractère pour la flèche -->
-        </div>
-    </div>
-
-      </div>
-    </section>
+      <FenetreSection/>
 
       <div class="div-prensentation">
         <h2 class="lineUp">We're building the best chat app on Earth</h2>
@@ -62,7 +33,7 @@
             Our approach is different. Chat is our only business. We love chat and are 100% dedicated to making it awesome. Read more of our chat manifesto.
           </p>
           <div class="row mt-5">
-            <div class="col-2"><img src="images/moi.jpg" alt="Mathéo berrez" class="card-image"></div>
+            <div class="col-2"><img src="../assets/images/moi.jpg" alt="Mathéo berrez" class="card-image"></div>
             <div class="card-content col">
               <h3 class="card-name">Mathéo Berrez</h3>
               <p class="card-title">Développeur full stack</p>
@@ -114,19 +85,18 @@
 </template>
 
 <script>
-export default {
+import FenetreSection from '../components/FenetreSection.vue';
+import OrbBackground from '../components/OrbBackground.vue';
 
+export default {
+  components: {
+    OrbBackground,
+    FenetreSection
+  }
 }
 </script>
 
 <style lang="scss">
-.matheo {
-color: white;
-margin-top: 50px;
-margin-left: 16%;
-font-size: 30px;
-position: relative;
-}
 
 .img-logo{
   margin-top: 50px;
@@ -134,7 +104,6 @@ position: relative;
   position: relative;
   height: 20px;
 }
-
 
 h1 {
   color: rgb(255, 255, 255);

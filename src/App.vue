@@ -1,18 +1,20 @@
 <template>
 
-  <OrbBackground/>
+
   <HomeView/>
+  <FenetreSection/>
   
 </template>
 
 <script>
-import OrbBackground from './components/OrbBackground.vue';
+
+import FenetreSection from './components/FenetreSection.vue';
 import HomeView from './views/HomeView.vue';
 
 export default {
   components: {
-    OrbBackground,
-    HomeView
+    HomeView,
+    FenetreSection
   }
 }
 </script>

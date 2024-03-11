@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 
 
-<style lang="scss">
+<style scoped lang="scss">
 
 $orb-size-base: 50vh;
 $orb-z-index: -1;

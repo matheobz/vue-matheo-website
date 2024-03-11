@@ -1,16 +1,18 @@
 <template>
 
   <OrbBackground/>
+  <HomeView/>
   
 </template>
 
 <script>
-import OrbBackground from './components/OrbBackground.vue'
+import OrbBackground from './components/OrbBackground.vue';
+import HomeView from './views/HomeView.vue';
 
 export default {
-  name: 'App',
   components: {
-    OrbBackground
+    OrbBackground,
+    HomeView
   }
 }
 </script>

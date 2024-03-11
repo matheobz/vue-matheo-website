@@ -2,7 +2,21 @@
 
   <OrbBackground/>
 
-  <img src="../assets/images/logo3.png" class="img-logo" alt="Logo">
+<div class="navbar">
+  <div class="space-left"></div> <!-- Espace à gauche -->
+  <div class="logo-container">
+   <img src="../assets/images/logo3.png" class="img-logo" alt="Logo"> <!-- Remplace 'path/to/your/logo.png' par le chemin vers ton logo -->
+  </div>
+  <div class="space-middle"></div> <!-- Espace au milieu -->
+  <div class="nav-links">
+    <a href="#home">Accueil</a>
+    <a href="#news">Nouvelles</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="space-right"></div> <!-- Espace à droite -->
+</div>
+
+  
     
     <section class="titre">
       <h1 class="lineUp">N'imaginez plus votre site</h1>
@@ -96,14 +110,58 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 
-.img-logo{
-  margin-top: 50px;
-  margin-left: 13%;
-  position: relative;
-  height: 20px;
-}
+.navbar {
+  margin-top: 1%;
+    display: flex; /* Utilise Flexbox pour la disposition */
+    padding: 10px 0; /* Padding vertical pour la navbar */
+  }
+
+
+  .navbar .space-left {
+    flex: 1; /* Prend l'espace disponible */
+  }
+
+
+  .navbar .logo-container {
+    flex: 1; /* Prend l'espace nécessaire pour le logo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar .logo-container img {
+    height: 20px;
+  }
+
+  .navbar .space-middle {
+    flex: 1;
+  }
+
+  /* Liens de navigation */
+  .navbar .nav-links {
+    flex: 2; /* Espace alloué aux liens */
+    display: flex;
+    justify-content: space-around; /* Répartit les liens uniformément */
+    align-items: center; /* Centre les liens verticalement */
+  }
+
+  .navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight:400;
+  }
+
+  .navbar .nav-links a:hover {
+    color: #cd34db;
+  }
+
+  .navbar .space-right {
+    flex: 1;
+  }
+
 
 h1 {
   color: rgb(255, 255, 255);

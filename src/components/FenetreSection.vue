@@ -22,11 +22,7 @@
 
             <p class="fenetre-titre">Jaguar<br>Votre voiture<br>À votre ADN</p>
 
-            <div class="hexagon-btn">
-                <div class="hexagon">
-                    <p class="arrow2">></p> <!-- Vous pouvez utiliser une icône ou un caractère pour la flèche -->
-                </div>
-            </div>
+
 
         </div>
     </section>
@@ -49,7 +45,7 @@ export default {
 }
 
 .fenetre{
-  border-radius: 40px;
+  border-radius: 25px;
 
   width: 75vw;
   height: 87vh;
@@ -131,52 +127,6 @@ export default {
 
   
 
-}
-
-.hexagon-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 115px;
-  background-color: transparent;
-}
-
-.hexagon {
-  width: 90px;
-  height: 51.96px;
-  background-color: transparent;
-  position: relative;
-  border-left: solid 2px white;
-  border-right: solid 2px white;
-}
-
-.hexagon:before, .hexagon:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  border-left: 45px solid transparent;
-  border-right: 45px solid transparent;
-}
-
-.hexagon:before {
-  bottom: 100%;
-  border-bottom: 28.87px solid white;
-}
-
-.hexagon:after {
-  top: 100%;
-  border-top: 28.87px solid white;
-}
-
-
-.arrow2 {
-  color: white;
-  font-size: 24px; /* Ajustez la taille de la flèche */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 </style>

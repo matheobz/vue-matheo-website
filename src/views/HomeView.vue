@@ -5,12 +5,13 @@
 <div class="navbar">
   <div class="space-left"></div> <!-- Espace à gauche -->
   <div class="logo-container">
-   <img src="../assets/images/logo3.png" class="img-logo" alt="Logo"> <!-- Remplace 'path/to/your/logo.png' par le chemin vers ton logo -->
+    <a href="#home">Mathéo's Website</a>
+   <!-- <img src="../assets/images/logo3.png" class="img-logo" alt="Logo"> -->
   </div>
   <div class="space-middle"></div> <!-- Espace au milieu -->
   <div class="nav-links">
-    <a href="#home" class="texte-souligne">Présentation</a>
-    <a href="#news" class="texte-souligne">Compétances</a>
+    <a href="#home" class="texte-souligne">Qui suis-je ?</a>
+    <a href="#news" class="texte-souligne">Compétences</a>
     <a href="#contact" class="texte-souligne">Technologies</a>
     <a href="#contact" class="texte-souligne">Contact</a>
   </div>
@@ -20,8 +21,8 @@
   
     
     <section class="titre">
-      <h1 class="lineUp">N'imaginez plus votre site</h1>
-      <h1 class="lineUp">Partagez-le</h1>
+      <h1 class="lineUp">N'imaginez plus votre site <br>Partagez-le</h1>
+
     </section>
       
     <a class="button-wrapper" href="#contact">
@@ -135,7 +136,7 @@ export default {
 .texte-souligne:hover::after {
   width: 100%;
   left:0;
-  background-color: #cd34db; /* Change la couleur en vert lorsque la souris passe dessus */
+  background-color: #0095ff; /* Change la couleur en vert lorsque la souris passe dessus */
 }
 
 .navbar {
@@ -157,6 +158,13 @@ export default {
     align-items: center;
   }
 
+   .navbar .logo-container a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight:700;
+  }
+
   .navbar .logo-container img {
     height: 20px;
   }
@@ -176,12 +184,12 @@ export default {
   .navbar .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 20px;
-    font-weight:400;
+    font-size: 18px;
+    font-weight:500;
   }
 
   .navbar .nav-links a:hover {
-    color: #cd34db;
+    color: #0095ff;
   }
 
   .navbar .space-right {
@@ -192,14 +200,14 @@ export default {
 h1 {
   color: rgb(255, 255, 255);
   text-align: center;
-  font-size: 5em!important;
+  font-size: 4.5em!important;
   font-weight: 700 !important;
   position: relative;
-  z-index: 100;
+  margin-bottom: 0;
 }
 
 .titre{
-  margin-top: 10%;
+  margin-top: 8%;
 }
 
 .div-prensentation{
@@ -271,13 +279,13 @@ h2 {
 
 .button {
   border-radius: 0.5rem;
-  color: black;
+  color: white  ;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bold;
   cursor: pointer;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255, .2);
   padding: 0.75rem 1.5rem 0.85rem;
   font-weight: 700;
   font-size: 1.23rem;

@@ -9,9 +9,10 @@
   </div>
   <div class="space-middle"></div> <!-- Espace au milieu -->
   <div class="nav-links">
-    <a href="#home">Accueil</a>
-    <a href="#news">Nouvelles</a>
-    <a href="#contact">Contact</a>
+    <a href="#home" class="texte-souligne">Présentation</a>
+    <a href="#news" class="texte-souligne">Compétances</a>
+    <a href="#contact" class="texte-souligne">Technologies</a>
+    <a href="#contact" class="texte-souligne">Contact</a>
   </div>
   <div class="space-right"></div> <!-- Espace à droite -->
 </div>
@@ -112,6 +113,31 @@ export default {
 
 <style scoped lang="scss">
 
+
+.texte-souligne {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 8px; /* Augmente l'espace sous le texte pour permettre un soulignement plus bas */
+}
+
+.texte-souligne::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -0px; /* Ajuste cette valeur pour déplacer le soulignement plus bas */
+  width: 0;
+  height: 1px; /* Rend le soulignement plus fin */
+  background-color: white; /* Définit la couleur initiale à blanc */
+  transition: width 0.3s ease, background-color 0.3s ease,   left 0.3s ease;; /* Ajoute une transition pour la couleur de fond */
+}
+
+.texte-souligne:hover::after {
+  width: 100%;
+  left:0;
+  background-color: #cd34db; /* Change la couleur en vert lorsque la souris passe dessus */
+}
+
 .navbar {
   margin-top: 1%;
     display: flex; /* Utilise Flexbox pour la disposition */
@@ -166,8 +192,7 @@ export default {
 h1 {
   color: rgb(255, 255, 255);
   text-align: center;
-  font-size: 5.5em!important;
-  margin-top: 1.2% !important;
+  font-size: 5em!important;
   font-weight: 700 !important;
   position: relative;
   z-index: 100;
@@ -246,13 +271,13 @@ h2 {
 
 .button {
   border-radius: 0.5rem;
-  color: white;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bold;
   cursor: pointer;
-  background-color: rgba(255, 255, 255, .2);
+  background-color: rgb(255, 255, 255);
   padding: 0.75rem 1.5rem 0.85rem;
   font-weight: 700;
   font-size: 1.23rem;

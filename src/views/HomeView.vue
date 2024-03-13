@@ -38,7 +38,7 @@
       <FenetreSection/>
 
       <div class="div-prensentation">
-        <h2 class="lineUp">We're building the best chat app on Earth</h2>
+        <h2 class="lineUp">Je me présente, Mathéo, développeur web :)</h2>
           <p class="prensentation">
             Chat today is broken. We have 5-10+ different chat apps on our phones, each for a different set of contacts. There's no unified inbox or search. Our inbox is cluttered with one-time codes and spam.
             <br><br>
@@ -59,7 +59,7 @@
 
     <div class="bg-grey pt-1 pb-1">
 
-      <div class="titre-global-box">More features you’ll love</div>
+      <p class="titre-global-box">Mes compétance !</p>
       <div class="box-des-box">
         <div class="box-column">
           <div class="div-box-1">
@@ -91,6 +91,8 @@
       </div>
     </div>
 
+
+<ContactSection/>
     <hr>
 
     <div class="footer">
@@ -103,11 +105,14 @@
 <script>
 import FenetreSection from '../components/FenetreSection.vue';
 import OrbBackground from '../components/OrbBackground.vue';
+import ContactSection from '../components/ContactSection.vue';
 
+ContactSection
 export default {
   components: {
     OrbBackground,
-    FenetreSection
+    FenetreSection,
+    ContactSection
   }
 }
 </script>
@@ -125,18 +130,18 @@ export default {
 .texte-souligne::after {
   content: '';
   position: absolute;
-  left: 50%;
   bottom: -0px; /* Ajuste cette valeur pour déplacer le soulignement plus bas */
   width: 0;
   height: 1px; /* Rend le soulignement plus fin */
   background-color: white; /* Définit la couleur initiale à blanc */
-  transition: width 0.3s ease, background-color 0.3s ease,   left 0.3s ease;; /* Ajoute une transition pour la couleur de fond */
+  transition: width 0.3s ease, background-color 0.3s ease,   left 0.3s ease; /* Ajoute une transition pour la couleur de fond */
+  left: 0;
 }
 
 .texte-souligne:hover::after {
   width: 100%;
   left:0;
-  background-color: #0095ff; /* Change la couleur en vert lorsque la souris passe dessus */
+  background-color: #9868e6; /* Change la couleur en vert lorsque la souris passe dessus */
 }
 
 .navbar {
@@ -189,7 +194,7 @@ export default {
   }
 
   .navbar .nav-links a:hover {
-    color: #0095ff;
+    color: #9868e6;
   }
 
   .navbar .space-right {

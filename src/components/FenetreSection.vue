@@ -32,27 +32,27 @@
 
 
 <script>
-export default {
-  data() {
-    return {
-      message: 'Jaguar\nVotre voiture\nÀ votre ADN',
-      currentImage: 'img-theme-2.jpg'
-    };
-  },
-  computed: {
-    backgroundImageStyle() {
-      console.log("bouton clicker !!!")
-      return {
-        backgroundImage: `url('/assets/images/${this.currentImage}')`
-      };
-    }
-  },
-  methods: {
-    changeBackground(imageName) {
-      this.currentImage = imageName;
-    },
-  }
-};
+// export default {
+//   data() {
+//     return {
+//       message: 'Jaguar\nVotre voiture\nÀ votre ADN',
+//       currentImage: 'img-theme-2.jpg'
+//     };
+//   },
+//   computed: {
+//     backgroundImageStyle() {
+//       console.log("bouton clicker !!!")
+//       return {
+//         backgroundImage: `url('/assets/images/${this.currentImage}')`
+//       };
+//     }
+//   },
+//   methods: {
+//     changeBackground(imageName) {
+//       this.currentImage = imageName;
+//     },
+//   }
+// };
 </script>
 
 

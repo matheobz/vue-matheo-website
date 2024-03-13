@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
 $orb-size-base: 50vh;
 $orb-z-index: -1;
 $orb-opacity-standard: 0.75;
-$orb-blur: 190px;
+$orb-blur: 160px;
 
 $orb-color1: #b03be8; /* #b03be8 */
 $orb-color2: #6757e7; /* #6757e7 */
@@ -115,29 +115,29 @@ $orb-color4: $orb-color1;
 
 .background-orb {
   width: 100%;
-  height: 100vh;
+  height: 55vh;
   position: absolute;
-  margin-top: -20vh;
+  margin-top: 20vh;
   display: block;
   filter: blur($orb-blur);
   z-index: -1;
 }
 
 .orb1 {
-  @include orb-style(60vh, $orb-color1, 1);
+  @include orb-style(70vh, $orb-color1, 1);
   z-index: -2;
 }
 
 .orb2 {
-  @include orb-style(70vh, $orb-color2);
+  @include orb-style(80vh, $orb-color2);
 }
 
 .orb3 {
-  @include orb-style(50vh, $orb-color3);
+  @include orb-style(60vh, $orb-color3);
 }
 
 .orb4 {
-  @include orb-style(80vh, $orb-color4, 1);
+  @include orb-style(90vh, $orb-color4, 1);
 }
 
 </style>

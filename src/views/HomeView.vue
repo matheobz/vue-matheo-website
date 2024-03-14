@@ -92,7 +92,7 @@
     </div>
 
 
-<ContactSection/>
+<TableauPeriodique/>
     <hr>
 
     <div class="footer">
@@ -105,14 +105,13 @@
 <script>
 import FenetreSection from '../components/FenetreSection.vue';
 import OrbBackground from '../components/OrbBackground.vue';
-import ContactSection from '../components/ContactSection.vue';
+import TableauPeriodique from '../components/TableauPeriodique.vue';
 
-ContactSection
 export default {
   components: {
     OrbBackground,
     FenetreSection,
-    ContactSection
+    TableauPeriodique
   }
 }
 </script>

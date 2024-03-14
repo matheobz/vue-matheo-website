@@ -5,7 +5,7 @@
 
         <div class="block">
             <div class="row">
-                    <div class="logo-container"><img class="logo" src="../assets/images/logos/html.png" alt="html"></div>
+                    <div class="logo-container"><img class="logo logo-container" src="../assets/images/logos/html.png" alt="html"></div>
                     <div class="logo-container"><img class="logo" src="../assets/images/logos/css.png" alt="css"></div>
                     <div class="logo-container"><img class="logo" src="../assets/images/logos/js.png" alt="javascript"></div>
                     <div class="logo-container"><img class="logo" src="../assets/images/logos/java.png" alt="java"></div>
@@ -94,8 +94,14 @@ h2{
     justify-content: center;
     align-items: center;
     width: auto; 
+     transition: transform 0.3s ease; /* Applique une transition fluide pour l'entrée et la sortie */
 
 }
+.logo-container:hover{
+    transform: scale(1.1);
+       
+}
+
 .logo {
     height: 70px; 
     width: 70px;
@@ -109,7 +115,9 @@ h2{
     animation: swell 0.8s ease forwards, fadeIn 1.5s ease forwards;
 }
 
-/* Keyframes pour les animations */
+.logo:hover {
+}
+
 @keyframes swell {
     from { transform: scale(0.5); }
     to { transform: scale(1); }

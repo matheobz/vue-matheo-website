@@ -1,9 +1,5 @@
 <template>
-
-
   <HomeView/>
-
-
 </template>
 
 <script>
@@ -18,6 +14,5 @@ export default {
 
 <style>
 @import url('assets/styles/global.css');
-@import '~normalize.css/normalize.css';
 
 </style>

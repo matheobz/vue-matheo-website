@@ -115,9 +115,6 @@ h2{
     animation: swell 0.8s ease forwards, fadeIn 1.5s ease forwards;
 }
 
-.logo:hover {
-}
-
 @keyframes swell {
     from { transform: scale(0.5); }
     to { transform: scale(1); }

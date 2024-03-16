@@ -92,8 +92,12 @@
     </div>
 
 
-<TableauPeriodique/>
+<TechnoSection/>
+
+<ContactSection/>
     <hr>
+
+
 
     <div class="footer">
       <br><br><br><br><br><br><br><br><br><br><br><br>
@@ -105,13 +109,16 @@
 <script>
 import FenetreSection from '../components/FenetreSection.vue';
 import OrbBackground from '../components/OrbBackground.vue';
-import TableauPeriodique from '../components/TableauPeriodique.vue';
+import TechnoSection from '../components/TechnoSection.vue';
+import ContactSection from '../components/ContactSection.vue';
 
 export default {
   components: {
     OrbBackground,
     FenetreSection,
-    TableauPeriodique
+    TechnoSection,
+    ContactSection
+    
   }
 }
 </script>

@@ -104,6 +104,19 @@ export default {
 
 
 <style scoped lang="scss">
+$color-vue: rgb(54, 176, 35);
+$color-html: rgb(255, 102, 0);
+$color-css: rgb(50, 50, 248);
+$color-js: rgb(255, 182, 46);
+$color-flutter: rgb(13, 142, 182);
+$color-cs: purple;
+$color-java: rgb(245, 0, 0);
+$color-php: rgb(75, 122, 182);
+$color-python: rgb(32, 39, 130);
+$color-sql: rgb(38, 110, 149);
+$color-pr: rgb(139, 0, 194);
+$color-ps: rgb(0, 73, 220);
+
 #container {
     display: flex;
     flex-direction: column;
@@ -165,19 +178,32 @@ h2 {
 }
 
 
-.carreVUE { border-color:rgb(54, 176, 35); }
-.carreHTML { border-color: rgb(255, 102, 0); }
-.carreCSS { border-color: rgb(50, 50, 248); }
-.carreJS { border-color: rgb(255, 182, 46); }
-.carreFLUTTER { border-color: purple; }
-.carreCS{ border-color: purple; }
-.carreJAVA { border-color: rgb(245, 0, 0); }
-.carrePHP { border-color: rgb(75, 122, 182); }
-.carrePYTHON { border-color: rgb(32, 39, 130); }
-.carreSQL { border-color: rgb(38, 110, 149); }
+.carreVUE { border-color: $color-vue; }
+.carreHTML { border-color: $color-html; }
+.carreCSS { border-color: $color-css; }
+.carreJS { border-color: $color-js; }
+.carreFLUTTER { border-color: $color-flutter; }
+.carreCS{ border-color: $color-cs; }
+.carreJAVA { border-color: $color-java; }
+.carrePHP { border-color: $color-php; }
+.carrePYTHON { border-color: $color-python; }
+.carreSQL { border-color: $color-sql; }
+.carrePR { border-color: $color-pr; }
+.carrePS { border-color: $color-ps; }
 
-.carrePR { border-color: rgb(139, 0, 194); }
-.carrePS { border-color: rgb(0, 73, 220); }
+.carreVUE .text-top-right, .carreVUE .text-under-logo { color: $color-vue; text-shadow: 0 0 8px $color-vue, 0 0 16px $color-vue, 0 0 24px $color-vue; }
+.carreHTML .text-top-right, .carreHTML .text-under-logo { color: $color-html; text-shadow: 0 0 8px $color-html, 0 0 16px $color-html, 0 0 24px $color-html; }
+.carreCSS .text-top-right, .carreCSS .text-under-logo { color: $color-css; text-shadow: 0 0 8px $color-css, 0 0 16px $color-css, 0 0 24px $color-css; }
+.carreJS .text-top-right, .carreJS .text-under-logo { color: $color-js; text-shadow: 0 0 8px $color-js, 0 0 16px $color-js, 0 0 24px $color-js; }
+.carreFLUTTER .text-top-right, .carreFLUTTER .text-under-logo { color: $color-flutter; text-shadow: 0 0 8px $color-flutter, 0 0 16px $color-flutter, 0 0 24px $color-flutter; }
+.carreCS .text-top-right, .carreCS .text-under-logo { color: $color-cs; text-shadow: 0 0 8px $color-cs, 0 0 16px $color-cs, 0 0 24px $color-cs; }
+.carreJAVA .text-top-right, .carreJAVA .text-under-logo { color: $color-java; text-shadow: 0 0 8px $color-java, 0 0 16px $color-java, 0 0 24px $color-java; }
+.carreSQL .text-top-right, .carreSQL .text-under-logo { color: $color-sql; text-shadow: 0 0 8px $color-sql, 0 0 16px $color-sql, 0 0 24px $color-sql; }
+.carrePYTHON .text-top-right, .carrePYTHON .text-under-logo { color: $color-python; text-shadow: 0 0 8px $color-python, 0 0 16px $color-python, 0 0 24px $color-python; }
+.carrePHP .text-top-right, .carrePHP .text-under-logo { color: $color-php; text-shadow: 0 0 8px $color-php, 0 0 16px $color-php, 0 0 24px $color-php; }
+.carrePR .text-top-right, .carrePR .text-under-logo { color: $color-pr; text-shadow: 0 0 8px $color-pr, 0 0 16px $color-pr, 0 0 24px $color-pr; }
+.carrePS .text-top-right, .carrePS .text-under-logo { color: $color-ps; text-shadow: 0 0 8px $color-ps, 0 0 16px $color-ps, 0 0 24px $color-ps; }
+
 
 
 .logo {
@@ -208,10 +234,14 @@ h2 {
 
 @keyframes neonText {
     from {
-        text-shadow: 0 0 8px #ffffff, 0 0 16px #ffffff, 0 0 24px #ffffff;
+        text-shadow: 0 0 8px , 0 0 16px , 0 0 24px ;
     }
     to {
-        text-shadow: 0 0 12px #ffffff, 0 0 20px #ffffff, 0 0 28px #ffffff;
+        text-shadow: 0 0 12px , 0 0 20px , 0 0 28px ;
     }
 }
+
+.carreVUE .text-top-right, .carreVUE .text-under-logo { color: $color-vue; text-shadow: 0 0 8px $color-vue, 0 0 16px $color-vue, 0 0 24px $color-vue; }
+.carreHTML .text-top-right, .carreHTML .text-under-logo { color: $color-html; text-shadow: 0 0 8px $color-html, 0 0 16px $color-html, 0 0 24px $color-html; }
+
 </style>

@@ -117,7 +117,7 @@ $orb-color4: $orb-color1;
   width: 100%;
   height: 55vh;
   position: absolute;
-  margin-top: 20vh;
+  margin-top: 30vh;
   display: block;
   filter: blur($orb-blur);
   z-index: -1;

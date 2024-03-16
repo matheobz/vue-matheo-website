@@ -52,49 +52,18 @@
             <div class="col-2"><img src="../assets/images/moi.jpg" alt="Mathéo berrez" class="card-image"></div>
             <div class="card-content col">
               <h3 class="card-name">Mathéo Berrez</h3>
-              <p class="card-title">Développeur full stack</p>
+              <p class="card-title">Développeur</p>
             </div>
           </div>
      </div>
 
-    <div class="bg-grey pt-1 pb-1">
-
-      <p class="titre-global-box">Mes compétance !</p>
-      <div class="box-des-box">
-        <div class="box-column">
-          <div class="div-box-1">
-            <h4 class="box-title">Open Source Protocol</h4>
-            <p class="box-P">Remember this XKCD comic? That’s why we built Beeper Cloud on the open source chat protocol Matrix. Unlike other chat networks, there is no lock-in. You’re free to use open source Matrix clients to connect to Beeper Cloud, or download your data and move to a different Matrix server and continue chatting with your friends on Beeper Cloud.
-              Beeper contributes back to the Matrix community. All of our Matrix bridges are open source on our Github. Don't want to pay for Beeper Cloud? Self-host your own instance for free.</p>
-          </div>
-          <div class="div-box-3">
-            <h4 class="box-title">Powerful Desktop App</h4>
-            <p class="box-P">Most chat apps treat desktop as a second class citizen. Not us! Our desktop app is fast, fully-featured and full of keyboard shortcuts to help you get through your inbox. Beeper Cloud runs on Windows, Mac OS, Linux and Chrome OS.</p>
-          </div>
-          <div class="div-box-1">
-            <h4 class="box-title">15 Chat Networks - 1 App</h4>
-            <p class="box-P">Contenu de la boîte 1...Contenu de la boîte 1...Contenu de la boîte 1...Contenu de la boîte 1...Contenu de la boîte 1...Contenu de la boîte 1...Contenu de la boîte 1...Contenu de la boîte 1...Contenu de la boîte 1...Contenu de la boîte 1...Contenu de la boîte 1...</p>
-          </div>
-        </div>
-        <div class="box-column">
-          <div class="div-box-2">
-            <h4 class="box-title">Secure Encrypted Chat</h4>
-            <p class="box-P">Privacy is a fundamental human right. We will uphold the privacy and security of the data you send and receive on Beeper Cloud. We will never profit by selling your data. Read FAQ for more details.
-
-              All Beeper Cloud chat messages are end-to-end encrypted. Messages sent using Beeper Cloud to other chat networks are re-encrypted if the other network supports encryption (like Signal, WhatsApp and iMessage).</p>
-          </div>
-          <div class="div-box-4">
-            <h4 class="box-title">Our Business Model Is Simple</h4>
-            <p class="box-P">We are building the best chat app on Earth. No ads. No siphoning and selling personal data. No BS. We sell an optional paid subscription with premium features. Our business model means that our interests are 100% aligned with our customers.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
+<CardsSection/>
+  
 
 <TechnoSection/>
 
 <ContactSection/>
+
     <hr>
 
 
@@ -111,11 +80,13 @@ import FenetreSection from '../components/FenetreSection.vue';
 import OrbBackground from '../components/OrbBackground.vue';
 import TechnoSection from '../components/TechnoSection.vue';
 import ContactSection from '../components/ContactSection.vue';
+import CardsSection from '../components/CardsSection.vue';
 
 export default {
   components: {
     OrbBackground,
     FenetreSection,
+    CardsSection,
     TechnoSection,
     ContactSection
     
@@ -225,14 +196,14 @@ h1 {
   margin-top: 6em;
   margin-left: auto; 
   margin-right: auto;
-  width: 45%;
+  width: 46%;
   position: relative;
   z-index: 100;
   margin-bottom: 8em;
 }
 
 h2 {
-  font-size:2.25rem !important;
+  font-size:2.35rem !important;
   text-align: left;
   margin-top: 0;
   margin-bottom: 0;
@@ -248,12 +219,12 @@ h2 {
 
 .prensentation{
   color: #ffffff;
-  font-size: 1.34rem !important;
+  font-size: 1.44rem;
   margin-bottom: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
-  font-size: 1rem;
-  font-weight: 400 !important;
+  font-weight: 400;
   margin-top: 3%;
+  line-height: 1.5;
 }
 
 .arrow {
@@ -334,75 +305,17 @@ h2 {
   font-size: 1.5rem;
   color: white;
   font-weight: 700;
+    margin-top: 1%;
 }
 
 .card-title {
+  margin-top: 1.5%;
   font-size: 1.2rem;
   color: white;
 }
 
 .fleche {
 margin-left: 0.2rem;
-}
-
-.bg-grey{
-  background-color: #25262D !important;
-}
-
-.titre-global-box{
-  color: white;
-  font-size: 3.3rem;
-  font-weight: 700;
-  line-height: 1.5;
-  text-align: center;
-  margin-top: 2em;
-}
-
-.box-title{
-  font-size:1.5rem !important;
-  text-align: left;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-weight: 700 !important;
-  line-height: 1.5;
-  display: inline-block;
-  background-image: linear-gradient(90deg, #9c4ce0, #f98e86);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-
-.box-P{
-  color: #131b3a !important;
-  font-size: 1.4rem !important;
-  margin-bottom: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;font-size: 1rem;
-  font-weight: 400 !important;
-  margin-top: 3%;
-  font-weight: 400 !important;
-}
-
-.box-des-box{
-  display: flex; /* Maintient les colonnes côte à côte */
-  justify-content: space-between; /* Ajoute de l'espace entre les colonnes */
-  width: 75%;
-  margin-right: auto;
-  margin-left: auto;
-  padding-top: 3em;
-}
-
-.box-column {
-  display: flex; /* Active Flexbox */
-  flex-direction: column; /* Alignement vertical des enfants */
-  width: 48.5%; /* Assure la cohérence avec div-box-1 et div-box-2 */
-}
-
-.div-box-1, .div-box-2, .div-box-3, .div-box-4 {
-  background-color: white;
-  border-radius: 25px;
-  padding: 4rem;
-  margin-bottom: 6%; /* Ajoute un peu d'espace entre les boîtes dans la même colonne */
 }
 
 hr {
@@ -416,15 +329,6 @@ hr {
 .footer{
   background-color: #25262D !important;
 }
-
-
-
-
-
-
-
-
-
 
 
 .lineUp {

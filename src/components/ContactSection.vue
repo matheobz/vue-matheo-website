@@ -19,7 +19,8 @@
           <button type="submit">Envoyer</button>
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_template" value="table">
-          <!-- <input type="hidden" name="_next" value="http://localhost:8080/"> -->
+          <input type="hidden" name="_next" value="http://localhost:8080/mailsend">
+          
         </form>
 
       </div>
@@ -133,6 +134,7 @@
   color: white;
   border-radius: 2rem;
   border: none;
+  cursor: pointer;
 }
 
 

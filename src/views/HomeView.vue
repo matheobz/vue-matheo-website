@@ -5,7 +5,7 @@
 <div class="navbar">
   <div class="space-left"></div> <!-- Espace à gauche -->
   <div class="logo-container">
-    <router-link to="/mailsend">Mathéo's Website</router-link>
+    <router-link to="/">Mathéo's Website</router-link>
 
   <!-- <img src="../assets/images/m-blanc.png" alt="Logo" class="logo"> -->
    <!-- <img src="../assets/images/logo3.png" class="img-logo" alt="Logo"> -->
@@ -66,18 +66,13 @@
 
 <CardsSection/>
   
-
 <TechnoSection/>
 
 <ContactSection/>
 
-    <hr>
+<hr>
 
-
-
-    <div class="footer">
-      <br><br><br><br><br><br><br><br><br><br><br><br>
-      </div>
+<FooterSection/>
 
 </template>
 
@@ -88,6 +83,8 @@ import TechnoSection from '../components/TechnoSection.vue';
 import ContactSection from '../components/ContactSection.vue';
 import CardsSection from '../components/CardsSection.vue';
 import AccordionSection from '../components/AccordionSection.vue';
+import FooterSection from '../components/FooterSection.vue';
+
 
 export default {
   components: {
@@ -96,7 +93,8 @@ export default {
     CardsSection,
     TechnoSection,
     ContactSection,
-    AccordionSection
+    AccordionSection,
+    FooterSection
   }
 }
 
@@ -334,10 +332,6 @@ hr {
   opacity: 1 !important;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
-}
-
-.footer{
-  background-color: #25262D !important;
 }
 
 

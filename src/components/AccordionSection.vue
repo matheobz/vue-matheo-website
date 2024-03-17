@@ -185,11 +185,11 @@ main{
 }
 
 .lineUp1 {
-  animation: 0.5s anim-lineUp ease-out;
+  animation: 1s anim-lineUp ease-out;
 }
 
 .lineUp2 {
-  animation: 1s anim-lineUp ease-out;
+  animation: 1.25s anim-lineUp ease-out;
 }
 
 .lineUp3 {
@@ -197,11 +197,11 @@ main{
 }
 
 .lineUp4 {
-  animation: 2s anim-lineUp ease-out;
+  animation: 1.75s anim-lineUp ease-out;
 }
 
 .lineUp5 {
-  animation: 2.5s anim-lineUp ease-out;
+  animation: 2s anim-lineUp ease-out;
 }
 
 @keyframes anim-lineUp {

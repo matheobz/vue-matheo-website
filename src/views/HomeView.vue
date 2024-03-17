@@ -22,7 +22,6 @@
     
     <section class="titre">
       <h1 class="lineUp">N'imaginez plus votre site <br>Partagez-le</h1>
-
     </section>
       
     <a class="button-wrapper" href="#contact">
@@ -35,7 +34,10 @@
       </a>
     </div>
 
-      <FenetreSection/>
+      <!-- <FenetreSection/> -->
+
+
+      <AccordionSection/>
 
       <div class="div-prensentation">
         <h2 class="lineUp">Je me présente, Mathéo, développeur web :)</h2>
@@ -48,11 +50,13 @@
             <br><br>
             Our approach is different. Chat is our only business. We love chat and are 100% dedicated to making it awesome. Read more of our chat manifesto.
           </p>
-          <div class="row mt-5">
-            <div class="col-2"><img src="../assets/images/moi.jpg" alt="Mathéo berrez" class="card-image"></div>
-            <div class="card-content col">
-              <h3 class="card-name">Mathéo Berrez</h3>
-              <p class="card-title">Développeur</p>
+          <div class="id">
+            <div class="pdp">
+              <img src="../assets/images/moi.jpg" alt="Mathéo berrez" class="card-image">
+            </div>
+            <div class="nom">
+              <h1>Mathéo Berrez</h1>
+              <p>Développeur</p>
             </div>
           </div>
      </div>
@@ -76,19 +80,21 @@
 </template>
 
 <script>
-import FenetreSection from '../components/FenetreSection.vue';
+// import FenetreSection from '../components/FenetreSection.vue';
 import OrbBackground from '../components/OrbBackground.vue';
 import TechnoSection from '../components/TechnoSection.vue';
 import ContactSection from '../components/ContactSection.vue';
 import CardsSection from '../components/CardsSection.vue';
+import AccordionSection from '../components/AccordionSection.vue';
 
 export default {
   components: {
     OrbBackground,
-    FenetreSection,
+    // FenetreSection,
     CardsSection,
     TechnoSection,
-    ContactSection
+    ContactSection,
+    AccordionSection
     
   }
 }
@@ -182,14 +188,15 @@ export default {
 h1 {
   color: rgb(255, 255, 255);
   text-align: center;
-  font-size: 4.5em!important;
-  font-weight: 700 !important;
+  font-size: 4.5em;
+  font-weight: 700;
   position: relative;
   margin-bottom: 0;
+  line-height: 1.3;
 }
 
 .titre{
-  margin-top: 8%;
+  margin-top: 12%;
 }
 
 .div-prensentation{
@@ -253,7 +260,7 @@ h2 {
 
 
 .button-wrapper {
-  margin-top: 2%;
+  margin-top: 4%;
   display: flex;
   justify-content: center;
   text-decoration: none;
@@ -281,41 +288,41 @@ h2 {
 }
 
 
-.card {
+.id {
   display: flex;
   background: black !important;
   margin-top: 7%;
 }
 
-.card-image {
+.id .pdp {
   border-radius: 50%;
-  margin-right: 15px;
   height: 75px;
   width: 75px;
-
 }
 
-.card-content {
+.id .pdp img {
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+}
+
+.id .nom {
+  padding-left: 15px;
   display: flex;
   flex-direction: column;
-  margin-left: -5%;
 }
 
-.card-name {
+.id .nom h1 {
   font-size: 1.5rem;
   color: white;
   font-weight: 700;
-    margin-top: 1%;
+  margin-top: 1%;
 }
 
-.card-title {
-  margin-top: 1.5%;
+.id p {
+  margin-top: 5%;
   font-size: 1.2rem;
   color: white;
-}
-
-.fleche {
-margin-left: 0.2rem;
 }
 
 hr {

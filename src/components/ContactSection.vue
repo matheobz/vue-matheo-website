@@ -43,8 +43,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #25262D ;
-  
+
+  background-image: url("../assets/images/bg-contact.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
 
 }
 
@@ -70,6 +73,7 @@
 .form {
   position: relative;
   background-color: black;
+    background-color: #000000af;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -101,7 +105,7 @@
   box-sizing: border-box;
   width: 100%;
   padding: 1rem;
-  border: .08rem solid blue;
+  border: .08rem solid #14759b;
   border-radius: 2rem;
   background-color: unset;
   color: white;
@@ -122,7 +126,7 @@
 
 
 .form button {
-  background-color: green ;
+  background-color: #b03be8 ;
   padding: 1rem 2rem;
   color: white;
   border-radius: 2rem;

@@ -1,0 +1,192 @@
+<template>
+
+    <div id="container" class="body">
+
+            
+        <main>
+            <div class="card">
+                <img src="../assets/images/img-theme-1.jpg" alt="" class="image">
+                <img src="../assets/images/img-theme-1.jpg" alt="" class="background">
+                <div class="layer">
+                    <div class="info">
+                        <h1>Titre</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, cumque.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/img-theme-2.jpg" alt="" class="image">
+                <img src="../assets/images/img-theme-2.jpg" alt="" class="background">
+                <div class="layer">
+                    <div class="info">
+                        <h1>Titre</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, cumque.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/img-theme-3.jpg" alt="" class="image">
+                <img src="../assets/images/img-theme-3.jpg" alt="" class="background">
+                <div class="layer">
+                    <div class="info">
+                        <h1>Titre</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, cumque.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/img-theme-4.jpg" alt="" class="image">
+                <img src="../assets/images/img-theme-4.jpg" alt="" class="background">
+                <div class="layer">
+                    <div class="info">
+                        <h1>Titre</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, cumque.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/img-theme-5.jpg" alt="" class="image">
+                <img src="../assets/images/img-theme-5.jpg" alt="" class="background">
+                <div class="layer">
+                    <div class="info">
+                        <h1>Titre</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, cumque.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+
+
+
+
+    </div>
+</template>
+
+<script>
+export default {
+}
+</script>
+
+
+
+<style scoped lang="scss">
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:white ;
+    transition: 0.5s;
+}
+
+#container{
+    margin-top: 5% ;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.body::before{
+    content:"";
+    // background-image: url("../assets/images/img-theme-3.jpg");
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+    filter: brightness(.25);
+    z-index: -1;
+}
+
+.title-container {
+    width: 100%;    
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 2rem;
+}
+
+main{
+    width: 1200px;
+    height: 500px;
+    display: flex;
+    gap: 15px;
+
+}
+
+.card {
+    width: 20%;
+    border-radius: 15px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card:hover {
+    width: 80%;
+}
+
+
+.card .image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card:hover .image {
+    transform: scale(1.2);
+}
+
+.card .background{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    pointer-events: none;
+    filter: brightness(.25);
+    opacity: 0;
+
+}
+
+.card:hover .background {
+    opacity: 1;
+}
+
+.card .layer{
+    width: 100%;
+    height: 50%;
+    margin-top: -250px;
+    position: relative;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+
+
+}
+
+.card .layer .info {
+    width: 260px;
+    position: absolute;
+    bottom: 10px;
+    padding: 20px;
+    opacity: 0;
+
+}
+
+.card:hover .layer .info {
+    opacity: 1;
+}
+
+.info p {
+    color: rgba(255, 255, 255, .75);
+    margin-top: 5px;
+
+}
+
+
+</style>

@@ -20,10 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialisation des positions et des vitesses des orbs
     let orbPositions = [
-        { x: 50, y: 100, dx: 0, dy: 0 }, // orb1 n'a pas de mouvement défini dans le code original
-        { x: null, y: 50, dx: -0.15, dy: 0.2 }, // x sera défini après que backgroundOrb.clientWidth soit accessible
-        { x: null, y: null, dx: -0.3, dy: -0.2 }, // x et y seront définis après
-        { x: 100, y: null, dx: 0.25, dy: -0.2 } // y sera défini après
+        { x: 50, y: 100, dx: 0.2, dy: 0.1 },
+        { x: null, y: 50, dx: -0.15, dy: 0.2 },
+        { x: null, y: null, dx: -0.3, dy: -0.2 },
+        { x: 50, y: null, dx: 0.25, dy: -0.2 }
     ];
 
     // Fonction pour mettre à jour la position d'un orb
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
 $orb-size-base: 50vh;
 $orb-z-index: -1;
 $orb-opacity-standard: 0.75;
-$orb-blur: 160px;
+$orb-blur: 140px;
 
 $orb-color1: #b03be8; /* #b03be8 */
 $orb-color2: #6757e7; /* #6757e7 */
@@ -124,20 +124,20 @@ $orb-color4: $orb-color1;
 }
 
 .orb1 {
-  @include orb-style(70vh, $orb-color1, 1);
+  @include orb-style(60vh, $orb-color1, 1);
   z-index: -2;
 }
 
 .orb2 {
-  @include orb-style(80vh, $orb-color2);
+  @include orb-style(70vh, $orb-color2);
 }
 
 .orb3 {
-  @include orb-style(60vh, $orb-color3);
+  @include orb-style(50vh, $orb-color3);
 }
 
 .orb4 {
-  @include orb-style(90vh, $orb-color4, 1);
+  @include orb-style(80vh, $orb-color4, 1);
 }
 
 </style>

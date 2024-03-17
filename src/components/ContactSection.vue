@@ -10,7 +10,7 @@
       </div>
 
       <div class="form">
-        <h1>Contact Us</h1>
+        <h1>Me contacter</h1>
         <form action="https://formsubmit.co/4dd6801f8e459ca1d130c3f8ec9c9e88" method="POST">
           <input type="text" name="name" required placeholder="Name">
           <input type="email" name="email" required placeholder="Email">
@@ -44,10 +44,13 @@
   justify-content: center;
   align-items: center;
 
-  background-image: url("../assets/images/bg-contact.jpg");
-  background-size: cover;
+  // background-image: url("../assets/images/bg-contact.jpg");
+  // background-size: cover;
+  background-color: #25262D;
   background-position: center;
   width: 100%;
+
+  background: linear-gradient(145deg, #090b1f,#401355);
 
 }
 
@@ -73,7 +76,6 @@
 .form {
   position: relative;
   background-color: black;
-    background-color: #000000af;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -105,7 +107,7 @@
   box-sizing: border-box;
   width: 100%;
   padding: 1rem;
-  border: .08rem solid #14759b;
+  border: .08rem solid white;
   border-radius: 2rem;
   background-color: unset;
   color: white;
@@ -132,5 +134,6 @@
   border-radius: 2rem;
   border: none;
 }
+
 
 </style>

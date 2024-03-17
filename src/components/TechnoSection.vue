@@ -54,7 +54,8 @@ export default {
 
 #container{
     width: 100%;
-   padding-bottom: 5%;
+    padding-bottom: 5%;
+    background-color: black;
 
 }
 
@@ -63,7 +64,7 @@ h1{
     font-size: 50px;
     font-weight: 700;
     color: white;
-    margin-top: 7%;
+    padding-top: 7%;
 }
 
 h2{

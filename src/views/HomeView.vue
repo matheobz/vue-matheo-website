@@ -5,8 +5,11 @@
 <div class="navbar">
   <div class="space-left"></div> <!-- Espace à gauche -->
   <div class="logo-container">
-    <a href="#home">Mathéo's Website</a>
+    <router-link to="/mailsend">Mathéo's Website</router-link>
+
+  <!-- <img src="../assets/images/m-blanc.png" alt="Logo" class="logo"> -->
    <!-- <img src="../assets/images/logo3.png" class="img-logo" alt="Logo"> -->
+   
   </div>
   <div class="space-middle"></div> <!-- Espace au milieu -->
   <div class="nav-links">
@@ -29,7 +32,7 @@
     </a>
 
     <div class="arrow-container">
-      <a data-scroll href="#full">
+      <a href="#full">
           <div class="arrow"></div>
       </a>
     </div>
@@ -40,7 +43,7 @@
       <AccordionSection/>
 
       <div class="div-prensentation">
-        <h2 class="lineUp">Je me présente, Mathéo, développeur web :)</h2>
+        <h2>Je me présente, Mathéo, développeur web :)</h2>
           <p class="prensentation">
             Chat today is broken. We have 5-10+ different chat apps on our phones, each for a different set of contacts. There's no unified inbox or search. Our inbox is cluttered with one-time codes and spam.
             <br><br>
@@ -76,7 +79,6 @@
       <br><br><br><br><br><br><br><br><br><br><br><br>
       </div>
 
-
 </template>
 
 <script>
@@ -95,13 +97,12 @@ export default {
     TechnoSection,
     ContactSection,
     AccordionSection
-    
   }
 }
+
 </script>
 
 <style scoped lang="scss">
-
 
 .texte-souligne {
   display: inline-block;
@@ -115,35 +116,38 @@ export default {
   position: absolute;
   bottom: -0px; /* Ajuste cette valeur pour déplacer le soulignement plus bas */
   width: 0;
-  height: 1px; /* Rend le soulignement plus fin */
-  background-color: white; /* Définit la couleur initiale à blanc */
-  transition: width 0.3s ease, background-color 0.3s ease,   left 0.3s ease; /* Ajoute une transition pour la couleur de fond */
+  height: 1px; 
+  background-color: white; 
+  transition: width 0.3s ease, background-color 0.3s ease,   left 0.3s ease;
   left: 0;
 }
 
 .texte-souligne:hover::after {
   width: 100%;
   left:0;
-  background-color: #9868e6; /* Change la couleur en vert lorsque la souris passe dessus */
+  background-color: #a94eff;
 }
 
 .navbar {
-  margin-top: 1%;
-    display: flex; /* Utilise Flexbox pour la disposition */
-    padding: 10px 0; /* Padding vertical pour la navbar */
-  }
+  margin-top: 2%;
+  display: flex;
+  padding: 10px 0;
+}
 
 
   .navbar .space-left {
-    flex: 1; /* Prend l'espace disponible */
+    flex: 1;
   }
 
 
   .navbar .logo-container {
-    flex: 1; /* Prend l'espace nécessaire pour le logo */
+    flex: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
+
+  }
+    
+  .navbar .logo-container .logo {
+  height: 80px;
   }
 
    .navbar .logo-container a {
@@ -161,12 +165,11 @@ export default {
     flex: 1;
   }
 
-  /* Liens de navigation */
   .navbar .nav-links {
-    flex: 2; /* Espace alloué aux liens */
+    flex: 2;
     display: flex;
-    justify-content: space-around; /* Répartit les liens uniformément */
-    align-items: center; /* Centre les liens verticalement */
+    justify-content: space-around;
+    align-items: right;
   }
 
   .navbar .nav-links a {
@@ -177,7 +180,7 @@ export default {
   }
 
   .navbar .nav-links a:hover {
-    color: #9868e6;
+    color: #a94eff;
   }
 
   .navbar .space-right {
@@ -188,7 +191,7 @@ export default {
 h1 {
   color: rgb(255, 255, 255);
   text-align: center;
-  font-size: 4.5em;
+  font-size: 5em;
   font-weight: 700;
   position: relative;
   margin-bottom: 0;
@@ -196,14 +199,14 @@ h1 {
 }
 
 .titre{
-  margin-top: 12%;
+  margin-top: 9%;
 }
 
 .div-prensentation{
   margin-top: 6em;
   margin-left: auto; 
   margin-right: auto;
-  width: 46%;
+  width: 45%;
   position: relative;
   z-index: 100;
   margin-bottom: 8em;
@@ -279,7 +282,7 @@ h2 {
   font-weight: 700;
   font-size: 1.23rem;
   line-height: 1.5;
-  transition: opacity .2s;
+  transition: .2s;
 }
 
 .button:hover {
@@ -358,29 +361,6 @@ hr {
     opacity: 1;
     transform: translateY(0%);
   }
-}
-
-
-.scroll {
-  text-align: center;
-	width: 60px;
-	height: 60px;
-	border: 2px solid #ffffff;
-	border-radius: 50%;
-	position: relative;
-	animation: down 1.5s infinite;
-	-webkit-animation: down 1.5s infinite;
-	&::before {
-		content: "";
-		position: absolute;
-		top: 15px;
-		left: 18px;
-		width: 18px;
-		height: 18px;
-		border-left: 2px solid #ffffff;
-		border-bottom: 2px solid #ffffff;
-		transform: rotate(-45deg);
-	}
 }
 
 </style>

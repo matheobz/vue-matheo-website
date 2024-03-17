@@ -4,7 +4,7 @@
 
             
         <main>
-            <div class="card">
+            <div class="card lineUp1">
                 <img src="../assets/images/img-theme-1.jpg" alt="" class="image">
                 <img src="../assets/images/img-theme-1.jpg" alt="" class="background">
                 <div class="layer">
@@ -14,7 +14,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card lineUp2">
                 <img src="../assets/images/img-theme-2.jpg" alt="" class="image">
                 <img src="../assets/images/img-theme-2.jpg" alt="" class="background">
                 <div class="layer">
@@ -24,7 +24,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card lineUp3">
                 <img src="../assets/images/img-theme-3.jpg" alt="" class="image">
                 <img src="../assets/images/img-theme-3.jpg" alt="" class="background">
                 <div class="layer">
@@ -34,7 +34,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card lineUp4">
                 <img src="../assets/images/img-theme-4.jpg" alt="" class="image">
                 <img src="../assets/images/img-theme-4.jpg" alt="" class="background">
                 <div class="layer">
@@ -44,7 +44,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card lineUp5">
                 <img src="../assets/images/img-theme-5.jpg" alt="" class="image">
                 <img src="../assets/images/img-theme-5.jpg" alt="" class="background">
                 <div class="layer">
@@ -55,10 +55,6 @@
                 </div>
             </div>
         </main>
-    
-
-
-
 
     </div>
 </template>
@@ -81,7 +77,7 @@ export default {
 }
 
 #container{
-    margin-top: 5% ;
+    margin-top: -4% ;
     display: flex;
     width: 100%;
     height: 100vh;
@@ -186,6 +182,44 @@ main{
     color: rgba(255, 255, 255, .75);
     margin-top: 5px;
 
+}
+
+.lineUp1 {
+  animation: 0.5s anim-lineUp ease-out;
+}
+
+.lineUp2 {
+  animation: 1s anim-lineUp ease-out;
+}
+
+.lineUp3 {
+  animation: 1.5s anim-lineUp ease-out;
+}
+
+.lineUp4 {
+  animation: 2s anim-lineUp ease-out;
+}
+
+.lineUp5 {
+  animation: 2.5s anim-lineUp ease-out;
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 
 

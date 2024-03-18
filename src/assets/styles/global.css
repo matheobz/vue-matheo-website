@@ -43,6 +43,11 @@ table {
 
 /*---------FIN DU RESET---------*/
 
+:root{
+	--color-primary-color:#b03be8;/* #b03be8 */
+	--color-secondary-color:#6757e7; /* #6757e7 */
+	--color-third-color:#4958f5;/* #4958f5 */
+}
 
 body {
    background-color: black;

@@ -2,8 +2,13 @@
   <OrbBackground/>
   <div class="container">
     <div class="confirmation-box">
-      <h1>Merci !</h1>
-      <p>Je vous confirme que votre message à bien été prit en compte.</p>
+      <h1>C'est envoyer !</h1>
+      <p>
+        Je vous confirme que votre message à bien été prit en compte.
+        <br>
+        <br>
+        Merci beaucoup et à bientôt !
+      </p>
       <router-link to="/" class="home-link">Retourner à l'accueil</router-link>
     </div>
   </div>

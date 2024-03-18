@@ -129,7 +129,7 @@ export default {
 }
 
 main{
-    width: 1200px;
+    width: 1400px;
     height: 500px;
     display: flex;
     gap: 15px;

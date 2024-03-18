@@ -98,9 +98,9 @@ $orb-z-index: -1;
 $orb-opacity-standard: 0.75;
 $orb-blur: 140px;
 
-$orb-color1: #b03be8; /* #b03be8 */
-$orb-color2: #6757e7; /* #6757e7 */
-$orb-color3: #4958f5; /* #4958f5 */
+$orb-color1: var(--color-primary-color); /* #b03be8 */
+$orb-color2: var(--color-secondary-color); /* #6757e7 */
+$orb-color3: var(--color-third-color); /* #4958f5 */
 $orb-color4: $orb-color1;
 
 @mixin orb-style($size, $color, $opacity: $orb-opacity-standard) {

@@ -1,7 +1,7 @@
 <template>
   <div id="sectionPresentation"  class="invisible" style="margin-top:-3%"></div>
   <div class="animate-enter container" ref="prensentationRef">
-        <h2 >Je me présente, Mathéo, développeur web :)</h2>
+        <h2 >Je me présente, Mathéo et vous ?</h2>
           <p class="prensentation">
             Chat today is broken. We have 5-10+ different chat apps on our phones, each for a different set of contacts. There's no unified inbox or search. Our inbox is cluttered with one-time codes and spam.
             <br><br>

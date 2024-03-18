@@ -1,14 +1,8 @@
 <template>
-
   <div id="container">
 
     <div class="contact">
-
-      <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86737.01090813839!2d-1.5142527497981346!3d47.20617996308197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ee81f0a8aead%3A0x40d37521e0ded30!2sNantes!5e0!3m2!1sfr!2sfr!4v1710607702324!5m2!1sfr!2sfr" 
-          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-
+      
       <div class="form">
         <h1>Me contacter</h1>
         <form action="https://formsubmit.co/4dd6801f8e459ca1d130c3f8ec9c9e88" method="POST">
@@ -20,15 +14,33 @@
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_next" value="http://localhost:8080/mailsend">
-          
         </form>
-
       </div>
-
     </div>
-
+    
   </div>
-
+<div class="grid">
+      <div class="colum">
+        <div class="form">
+        <h1>Prendre contact en 2 click !</h1>
+        <form action="https://formsubmit.co/4dd6801f8e459ca1d130c3f8ec9c9e88" method="POST">
+          <input type="text" name="name" required placeholder="Name">
+          <input type="email" name="email" required placeholder="Email">
+          <input type="text" name="subject" required placeholder="Subject">
+          <textarea name="message" required placeholder="Message"></textarea>
+          <button type="submit">Envoyer</button>
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="http://localhost:8080/mailsend">
+        </form>
+        </div>
+      </div>
+      <div class="colum">
+        <div class="map">
+         
+        </div>
+      </div>
+    </div>
 </template>
 
 <script>
@@ -76,7 +88,6 @@
 
 .form {
   position: relative;
-  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -94,12 +105,6 @@
 
 }
 
-.form h1{
-  color: white;
-  font: 500 1.8rem;
-  padding: 0 2rem;
-}
-
 .form form{
   padding: 0 2rem;
 }
@@ -109,21 +114,18 @@
   width: 100%;
   padding: 1rem;
   border: .08rem solid white;
-  border-radius: 2rem;
-  background-color: unset;
-  color: white;
+  border-radius: 1rem;
+  background-color: white;
+  color: black;
   font-size: 1rem;
-
 }
 
 .form input:not(:first-child), .form textarea, .form button {
-
-  margin-top: .8rem;
-
+  margin-top: 1rem;
 }
 
 .form textarea {
-  height: 6rem;
+  height: 8rem;
   resize: none;
 } 
 
@@ -132,10 +134,31 @@
   background-color: #b03be8 ;
   padding: 1rem 2rem;
   color: white;
-  border-radius: 2rem;
+  border-radius: 1rem;
   border: none;
   cursor: pointer;
 }
+
+
+.grid {
+  display: flex;
+  background: linear-gradient(145deg, #090b1f,#401355);
+}
+
+.grid .colum {
+  height: 80vh;
+  width: 50%;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.grid .colum h1 {
+  color: white;
+  font: 500 1.8rem;
+  padding: 5rem 7rem;
+}
+
 
 
 </style>

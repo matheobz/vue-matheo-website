@@ -45,12 +45,15 @@
                 </div>
             </div>
             <div class="card lineUp5">
-                <img src="../assets/images/img-theme-5.jpg" alt="" class="image">
-                <img src="../assets/images/img-theme-5.jpg" alt="" class="background">
+                <img src="../assets/images/car.png" alt="" class="image">
+                <video class="background-video" autoplay loop muted>
+                    <source src="../assets/videos/backgroundcar.mp4" type="video/mp4">
+                    Votre navigateur ne prend pas en charge la balise vidéo.
+                </video>
                 <div class="layer">
                     <div class="info">
-                        <h1>Titre</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, cumque.</p>
+                        <h1>Partagez Votre Passion</h1>
+                        <p></p>
                     </div>
                 </div>
             </div>
@@ -67,6 +70,25 @@ export default {
 
 
 <style scoped lang="scss">
+
+.background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover; // Assure que la vidéo couvre l'espace disponible sans déformation
+    filter: brightness(.25);
+    opacity: 0; // Commencez par rendre la vidéo transparente
+    transition: opacity 0.5s ease; // Transition douce pour l'apparition
+}
+
+.card:hover .background-video {
+    opacity: 1; // Rend la vidéo visible lors du survol
+}
 
 * {
     margin: 0;
@@ -166,7 +188,7 @@ main{
 }
 
 .card .layer .info {
-    width: 260px;
+    width: 460px;
     position: absolute;
     bottom: 10px;
     padding: 20px;

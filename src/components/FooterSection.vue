@@ -1,5 +1,6 @@
 <template>
   <footer id="footer">
+    <hr>
     <div class="footer-content">
       <div class="brand-section">
         <img src="../assets/images/m-blanc.png" alt="Beeper Logo" class="logo" />
@@ -109,6 +110,14 @@ export default {
   .links-column {
     margin-bottom: 20px;
   }
+}
+
+hr {
+  height: 1px !important; /* Définit la hauteur de votre hr */
+  background-color: white !important; /* Définit la couleur de fond du hr */
+  opacity: 1 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 </style>

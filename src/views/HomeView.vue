@@ -1,28 +1,26 @@
 <template>
-
   <OrbBackground/>
 
-<div class="navbar">
-  <div class="space-left"></div> <!-- Espace à gauche -->
-  <div class="logo-container">
-    <router-link to="/">Mathéo's Website</router-link>
+  <div class="navbar">
+    <div class="space-left"></div> <!-- Espace à gauche -->
+    <div class="logo-container">
+      <router-link to="/">Mathéo's Website</router-link>
 
-  <!-- <img src="../assets/images/m-blanc.png" alt="Logo" class="logo"> -->
-   <!-- <img src="../assets/images/logo3.png" class="img-logo" alt="Logo"> -->
-   
-  </div>
-  <div class="space-middle"></div> <!-- Espace au milieu -->
-  <div class="nav-links">
-    <a href="#home" class="texte-souligne">Qui suis-je ?</a>
-    <a href="#news" class="texte-souligne">Compétences</a>
-    <a href="#contact" class="texte-souligne">Technologies</a>
-    <a href="#contact" class="texte-souligne">Contact</a>
-  </div>
-  <div class="space-right"></div> <!-- Espace à droite -->
-</div>
-
-  
+    <!-- <img src="../assets/images/m-blanc.png" alt="Logo" class="logo"> -->
+    <!-- <img src="../assets/images/logo3.png" class="img-logo" alt="Logo"> -->
     
+    </div>
+    <div class="space-middle"></div> <!-- Espace au milieu -->
+    <div class="nav-links">
+      <a href="#home" class="texte-souligne">Qui suis-je ?</a>
+      <a href="#news" class="texte-souligne">Compétences</a>
+      <a href="#contact" class="texte-souligne">Technologies</a>
+      <a href="#contact" class="texte-souligne">Contact</a>
+    </div>
+    <div class="space-right"></div> <!-- Espace à droite -->
+  </div>
+
+
     <section class="titre">
       <h1 class="lineUp">N'imaginez plus votre site <br>Partagez-le</h1>
     </section>
@@ -37,42 +35,20 @@
       </a>
     </div>
 
-      <!-- <FenetreSection/> -->
 
+  <!-- <FenetreSection/> -->
 
-      <AccordionSection/>
+  <AccordionSection/>
 
-      <div class="div-prensentation">
-        <h2>Je me présente, Mathéo, développeur web :)</h2>
-          <p class="prensentation">
-            Chat today is broken. We have 5-10+ different chat apps on our phones, each for a different set of contacts. There's no unified inbox or search. Our inbox is cluttered with one-time codes and spam.
-            <br><br>
-            So, we're fixing it. Beeper Cloud is a universal chat app. It’s a single app to chat with friends on 15 different chat networks. We’ve added chat superpowers that make it the best chat app on earth.
-            <br><br>
-            Apple, Facebook and Google control the majority of chat apps right now. For them, chat is just a minor part of their main business. Their chat apps exist primarily to lock people in to their advertising or hardware walled-gardens.
-            <br><br>
-            Our approach is different. Chat is our only business. We love chat and are 100% dedicated to making it awesome. Read more of our chat manifesto.
-          </p>
-          <div class="id">
-            <div class="pdp">
-              <img src="../assets/images/moi.jpg" alt="Mathéo berrez" class="card-image">
-            </div>
-            <div class="nom">
-              <h1>Mathéo Berrez</h1>
-              <p>Développeur</p>
-            </div>
-          </div>
-     </div>
+  <PresentationSection/>
 
-<CardsSection/>
-  
-<TechnoSection/>
+  <CardsSection/>
+    
+  <TechnoSection/>
 
-<ContactSection/>
+  <ContactSection/>
 
-<hr>
-
-<FooterSection/>
+  <FooterSection/>
 
 </template>
 
@@ -84,7 +60,7 @@ import ContactSection from '../components/ContactSection.vue';
 import CardsSection from '../components/CardsSection.vue';
 import AccordionSection from '../components/AccordionSection.vue';
 import FooterSection from '../components/FooterSection.vue';
-
+import PresentationSection from '../components/PresentationSection.vue';
 
 export default {
   components: {
@@ -94,10 +70,10 @@ export default {
     TechnoSection,
     ContactSection,
     AccordionSection,
-    FooterSection
+    FooterSection,
+    PresentationSection
   }
 }
-
 </script>
 
 <style scoped lang="scss">
@@ -200,40 +176,7 @@ h1 {
   margin-top: 9%;
 }
 
-.div-prensentation{
-  margin-top: 6em;
-  margin-left: auto; 
-  margin-right: auto;
-  width: 45%;
-  position: relative;
-  z-index: 100;
-  margin-bottom: 8em;
-}
 
-h2 {
-  font-size:2.35rem !important;
-  text-align: left;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-weight: 700 !important;
-  line-height: 1.5;
-  display: inline-block;
-  background-image: linear-gradient(90deg, #9c4ce0, #f98e86);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-}
-
-.prensentation{
-  color: #ffffff;
-  font-size: 1.44rem;
-  margin-bottom: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
-  font-weight: 400;
-  margin-top: 3%;
-  line-height: 1.5;
-}
 
 .arrow {
   box-sizing: border-box;
@@ -288,51 +231,6 @@ h2 {
   
 }
 
-
-.id {
-  display: flex;
-  background: black !important;
-  margin-top: 7%;
-}
-
-.id .pdp {
-  border-radius: 50%;
-  height: 75px;
-  width: 75px;
-}
-
-.id .pdp img {
-  border-radius: 50%;
-  height: 75px;
-  width: 75px;
-}
-
-.id .nom {
-  padding-left: 15px;
-  display: flex;
-  flex-direction: column;
-}
-
-.id .nom h1 {
-  font-size: 1.5rem;
-  color: white;
-  font-weight: 700;
-  margin-top: 1%;
-}
-
-.id p {
-  margin-top: 5%;
-  font-size: 1.2rem;
-  color: white;
-}
-
-hr {
-  height: 1px !important; /* Définit la hauteur de votre hr */
-  background-color: white !important; /* Définit la couleur de fond du hr */
-  opacity: 1 !important;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-}
 
 
 .lineUp {

@@ -1,5 +1,5 @@
 <template>
-    <div id="container">
+    <div class="container"  id="sectionTechno">
         <h1>Technologie maitrisé </h1>
         <h2>Étudier dans le cadre de mes études ou en perso !</h2>
 
@@ -52,7 +52,7 @@ export default {
 
 <style scoped lang="scss">
 
-#container{
+.container{
     width: 100%;
     padding-bottom: 5%;
     background-color: black;

@@ -1,13 +1,15 @@
 <template>
+<hr>
   <footer id="footer">
-    <hr>
     <div class="footer-content">
-      <div class="brand-section">
-        <img src="../assets/images/m-blanc.png" alt="Beeper Logo" class="logo" />
-        <p>© 2024 Beeper Inc.</p>
-      </div>
-      <div class="links-section">
-        <div class="links-column">
+      <div class="grid">
+
+        <div class="column brand-section">
+          <img src="../assets/images/m-blanc.png" alt="Beeper Logo" class="logo" />
+          <p>© 2024 Beeper Inc.</p>
+        </div>
+
+        <div class="column">
           <h4>Company</h4>
           <ul>
             <li><a href="#">Blog</a></li>
@@ -16,8 +18,8 @@
             <li><a href="#">GitHub</a></li>
             <li><a href="#">Twitter</a></li>
           </ul>
-        </div>
-        <div class="links-column">
+
+
           <h4>App</h4>
           <ul>
             <li><a href="#">Download</a></li>
@@ -28,14 +30,15 @@
             <li><a href="#">Self-host</a></li>
             <li><a href="#">System status</a></li>
           </ul>
-        </div>
-        <div class="links-column">
+
           <h4>Legal</h4>
           <ul>
             <li><a href="#">Terms</a></li>
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Security</a></li>
           </ul>
+
+
         </div>
       </div>
     </div>
@@ -53,19 +56,9 @@ export default {
 #footer {
   background-color: #25262D;
   color: white;
-  padding: 40px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  padding: 20px 0 40px 0;
 
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
 }
-
 .brand-section {
   text-align: left;
 }
@@ -75,17 +68,17 @@ export default {
   margin-bottom: 10px;
 }
 
-.links-column h4 {
+.column h4 {
   margin-bottom: 10px;
   color: #aaa;
 }
 
-.links-column ul {
+.column ul {
   list-style: none;
   padding: 0;
 }
 
-.links-column li a {
+.column li a {
   color: white;
   text-decoration: none;
   margin-bottom: 5px;
@@ -96,28 +89,23 @@ export default {
   text-decoration: underline;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .footer-content {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .links-section {
-    margin-top: 20px;
-  }
-  
-  .links-column {
-    margin-bottom: 20px;
-  }
-}
 
 hr {
-  height: 1px !important; /* Définit la hauteur de votre hr */
-  background-color: white !important; /* Définit la couleur de fond du hr */
+  height: 0.5px !important;
+  background-color: white !important;
   opacity: 1 !important;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
+}
+
+.grid {
+  display: flex;
+}
+
+.grid .column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
 </style>

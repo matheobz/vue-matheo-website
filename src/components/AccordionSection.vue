@@ -106,7 +106,6 @@ export default {
     justify-content: center;
     align-items: center;
 
-
 }
 
 .body::before{
@@ -117,7 +116,7 @@ export default {
     height: 100vh;
     background-size:cover;
     background-position: center;
-    filter: brightness(.25);
+    filter: brightness(.5); //.25 par défaut
     z-index: -1;
 }
 

@@ -1,6 +1,6 @@
 <template>
-  <div id="container" class="animate-enter" ref="prensentationRef">
-
+  <div id="sectionPresentation"  class="invisible" style="margin-top:-3%"></div>
+  <div class="animate-enter container" ref="prensentationRef">
         <h2 >Je me présente, Mathéo, développeur web :)</h2>
           <p class="prensentation">
             Chat today is broken. We have 5-10+ different chat apps on our phones, each for a different set of contacts. There's no unified inbox or search. Our inbox is cluttered with one-time codes and spam.
@@ -63,11 +63,8 @@ export default {
   transform: translateY(0);
 }
 
-
-#container {
-  margin-top: 4em;
-  margin-left: auto; 
-  margin-right: auto;
+.container {
+  margin: 2em auto 0 auto;
   width: 45%;
   position: relative;
   z-index: 100;
@@ -101,7 +98,6 @@ h2 {
 
 .id {
   display: flex;
-  background: black !important;
   margin-top: 7%;
 }
 

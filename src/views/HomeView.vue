@@ -12,10 +12,10 @@
     </div>
     <div class="space-middle"></div> <!-- Espace au milieu -->
     <div class="nav-links">
-      <a href="#home" class="texte-souligne">Qui suis-je ?</a>
-      <a href="#news" class="texte-souligne">Compétences</a>
-      <a href="#contact" class="texte-souligne">Technologies</a>
-      <a href="#contact" class="texte-souligne">Contact</a>
+      <a class="texte-souligne" onclick="document.getElementById('sectionPresentation').scrollIntoView({ behavior: 'smooth' });">Qui suis-je ?</a>
+      <a class="texte-souligne" onclick="document.getElementById('sectionCompetance').scrollIntoView({ behavior: 'smooth' });">Compétences</a>
+      <a class="texte-souligne" onclick="document.getElementById('sectionTechno').scrollIntoView({ behavior: 'smooth' });">Technologies</a>
+      <a class="texte-souligne" onclick="document.getElementById('sectionContact').scrollIntoView({ behavior: 'smooth' });">Contact</a>
     </div>
     <div class="space-right"></div> <!-- Espace à droite -->
   </div>
@@ -74,6 +74,8 @@ export default {
     PresentationSection
   }
 }
+
+
 </script>
 
 <style scoped lang="scss">

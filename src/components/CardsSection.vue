@@ -1,5 +1,5 @@
 <template>
-  <div id="container">
+  <div class="container" id="sectionCompetance">
       <h1>Mes compétences</h1>
       <div class="boxes">
         <div class="column">
@@ -38,7 +38,7 @@ export default {}
 
 <style scoped lang="scss">
 
-#container {
+.container {
   background-color: #25262D;
   padding: 6% 2% 0;
 }

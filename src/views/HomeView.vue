@@ -1,4 +1,6 @@
 <template>
+  <!-- <FenetreSection/> -->
+  
   <OrbBackground/>
 
   <HeaderSection/>
@@ -15,6 +17,9 @@
 
   <FooterSection/>
 
+  <FenetreSection/>
+  
+
 </template>
 
 <script>
@@ -27,6 +32,8 @@ import FooterSection from '../components/FooterSection.vue';
 import PresentationSection from '../components/PresentationSection.vue';
 import HeaderSection from '../components/HeaderSection.vue';
 
+// import FenetreSection from '../components/FenetreSection.vue';
+
 export default {
   components: {
     OrbBackground,
@@ -36,7 +43,9 @@ export default {
     AccordionSection,
     FooterSection,
     PresentationSection,
-    HeaderSection
+    HeaderSection,
+
+    // FenetreSection
   }
 }
 

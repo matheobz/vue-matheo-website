@@ -24,8 +24,8 @@
       <h1 class="lineUp">N'imaginez plus votre site <br>Partagez-le</h1>
     </section>
       
-    <a class="button-wrapper" href="#contact">
-      <div class="button mt-3">Me contacter <span class="fleche">→</span></div>
+    <a class="button-wrapper" >
+      <div class="button mt-3" onclick="document.getElementById('sectionContact').scrollIntoView({ behavior: 'smooth' });">Me contacter <span class="fleche"> →</span></div>
     </a>
 
     <div id="accordionSection"  class="invisible" style="margin-top:.1%;"></div>
@@ -39,12 +39,31 @@
 
 <script>
 export default {
-
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      const arrow = document.querySelector('.arrow-container');
+      if (window.scrollY > 550) { // Ajustez ce seuil à la valeur souhaitée
+        arrow.classList.add('fade-out');
+      } else {
+        arrow.classList.remove('fade-out');
+      }
+    }
+  }
 }
 </script>
 
 
 <style scoped lang="scss">
+
+.fleche{
+  margin-left: 5px;
+}
 
 .texte-souligne {
   display: inline-block;
@@ -67,13 +86,13 @@ export default {
 .texte-souligne:hover::after {
   width: 100%;
   left:0;
-  background-color: var(--color-primary-color);
+  background-color: var(--color-secondary-color);
 }
 
 .navbar {
-    margin-top: 2%;
+    padding-top: 2.5%;
     display: flex;
-    padding: 10px 0;
+
 }
 
 
@@ -122,7 +141,7 @@ export default {
 }
 
 .navbar .nav-links a:hover {
-    color: var(--color-primary-color);
+    color: var(--color-secondary-color);
 }
 
 .navbar .space-right {
@@ -170,6 +189,10 @@ h1 {
   justify-content: center;
 }
 
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
 
 
 .button-wrapper {

@@ -44,7 +44,8 @@
           <input type="text" name="subject" required placeholder="Sujet">
           <textarea name="message" required placeholder="Message"></textarea>
           <button type="submit">
-          <span>Envoyer</span>
+          <span v-if="!isLoading">Envoyer</span>
+          <span v-if="isLoading" class="loader"></span>
           <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
             <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0"/>
           </svg>
@@ -60,8 +61,44 @@
   </div>
 </template>
 
-<script>
 
+<script>
+export default {
+  data() {
+    return {
+      isLoading: false, // Contrôle l'état de l'animation de chargement
+    };
+  },
+  mounted() {
+    // Attache un écouteur d'événements au formulaire lors du montage du composant
+    this.attachFormSubmitListener();
+  },
+  methods: {
+    attachFormSubmitListener() {
+      // Trouve le formulaire dans le template du composant
+      const form = this.$el.querySelector('form');
+      
+      if (form) {
+        // Attache un écouteur d'événements 'submit' au formulaire
+        form.addEventListener('submit', this.handleFormSubmit);
+      }
+    },
+    handleFormSubmit() {
+      // Active l'animation de chargement
+      this.isLoading = true;
+
+      // Aucun appel à `event.preventDefault()` ici car nous voulons que le formulaire se soumette normalement
+      // L'animation de chargement restera active jusqu'à ce que la page soit redirigée ou rechargée
+    },
+  },
+  beforeUnmount() {
+    // Nettoie l'écouteur d'événements lorsque le composant est sur le point d'être détruit
+    const form = this.$el.querySelector('form');
+    if (form) {
+      form.removeEventListener('submit', this.handleFormSubmit);
+    }
+  },
+};
 </script>
 
 
@@ -69,10 +106,39 @@
 .container{
   background-position: center;
   width: 100%;
-  background: linear-gradient(145deg, #090b1f,#401355);
+
+  background: linear-gradient(220deg,var(--color-bgFade2-color) ,var(--color-bgFade1-color));
+
   box-sizing: border-box;
   min-height: 90vh;
 }
+
+
+.loader {
+    width: 20px;
+    height: 20px;
+    border: 4px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+
+
+
+
+
+
 
 .icon{
   font-size: 1.6rem;
@@ -147,9 +213,9 @@ p{
 
 .grid .column {
   width: 100%;
-  padding: 2rem 2% 0rem 5%;
+  padding: 2rem 2% 0rem 7%;
   display: flex;
-  // flex-direction: column;
+  flex-direction: column;
   // justify-content: center;
   // align-items: center;
 }
@@ -161,7 +227,7 @@ p{
 }
 
 .form button {
-  background-color: #b03be8 ;
+  background-color: var(--color-primary-color) ;
   padding: 1rem 2rem;
   border: none;
   appearance: none;
@@ -174,6 +240,8 @@ p{
   line-height: 1;
   padding: 1em 1.5em;
   position: relative;
+  height: 50px;
+  width: 100px;
  
 }
 
@@ -202,7 +270,7 @@ button:active > span {
 }
 
 button > svg {
-  fill: #b03be8;
+  fill: var(--color-primary-color);
   position: absolute;
   top: -5%;
   left: -5%;

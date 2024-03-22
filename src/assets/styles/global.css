@@ -44,15 +44,25 @@ table {
 /*---------FIN DU RESET---------*/
 
 :root{
-	--color-primary-color:#b03be8;/* #b03be8 */
-	--color-secondary-color:#6757e7; /* #6757e7 */
-	--color-third-color:#4958f5;/* #4958f5 */
+	--color-primary-color:rgb(43, 32, 197);/* #b03be8 */
+	--color-secondary-color:rgb(21, 255, 157); /* #6757e7 */
+	--color-third-color:#22b0d3;/* #4958f5 */
+
+	--color-fadeText1-color: #0084ff; /* #4b8aff */
+	--color-fadeText2-color: #00ff9d; /* #26d8c0 */
+
+	--color-bg2-color:   #25262d;
+
+	--color-bgFade1-color: #11131a; /* #090b1f */
+	--color-bgFade2-color: #0c1535; /* #401355 */
 }
 
 body {
    background-color: black;
    scroll-behavior: smooth;
    font-family: "Mona Sans", "Mona Sans Fallback", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	/*overflow-x: hidden;*/
+
 }
 
 .invisible{

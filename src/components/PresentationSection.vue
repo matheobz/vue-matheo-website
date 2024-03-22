@@ -3,13 +3,21 @@
   <div class="animate-enter container" ref="prensentationRef">
         <h2 >Je me présente, Mathéo et vous ?</h2>
           <p class="prensentation">
-            Chat today is broken. We have 5-10+ different chat apps on our phones, each for a different set of contacts. There's no unified inbox or search. Our inbox is cluttered with one-time codes and spam.
+            Je suis un développeur, basé à Nantes,  avec un parcours riche et diversifié qui m'a conduit à maîtriser les nuances de l'informatique et, plus précisément, du développement sur internet.
+             <br><br>
+
+            Agé de 21 ans, je possède un BTS SIO et suis actuellement une Licences en 3eme années post bac. 
+            C'est donc de mon temps libre et par passion que je créer des sites internets afin de m'épanouir et m'enrichire de nouvelle compétances proffessionels.
+           
             <br><br>
-            So, we're fixing it. Beeper Cloud is a universal chat app. It’s a single app to chat with friends on 15 different chat networks. We’ve added chat superpowers that make it the best chat app on earth.
+
+Agé de 21 ans, je possède un BTS SIO et suis actuellement une Licences en 3eme années post bac. 
+            C'est donc de mon temps libre et par passion que je créer des sites internets afin de m'épanouir et m'enrichire de nouvelle compétances proffessionels.
+           
+            
+
             <br><br>
-            Apple, Facebook and Google control the majority of chat apps right now. For them, chat is just a minor part of their main business. Their chat apps exist primarily to lock people in to their advertising or hardware walled-gardens.
-            <br><br>
-            Our approach is different. Chat is our only business. We love chat and are 100% dedicated to making it awesome. Read more of our chat manifesto.
+            <b>Votre satisfaction est ma priorité.</b>  Je m'engage à respecter les délais, à assurer une communication claire et à fournir un support fiable après la mise en ligne.
           </p>
           <div class="id">
             <div class="pdp">
@@ -79,7 +87,7 @@ h2 {
   font-weight: 700 !important;
   line-height: 1.5;
   display: inline-block;
-  background-image: linear-gradient(90deg, #9c4ce0, #f98e86);
+  background-image: linear-gradient(90deg, var(--color-fadeText1-color), var(--color-fadeText2-color));//#9c4ce0, #f98e86
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

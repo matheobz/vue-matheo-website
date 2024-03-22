@@ -22,6 +22,10 @@
             <h4>Secure Encrypted Chat</h4>
             <p>Privacy is a fundamental human right...</p>
           </div>
+          <div class="box-dark">
+            <h4>Dark Mode</h4>
+            <p>Toujours un plus pour le conford utilisateur</p>
+          </div>
           <div class="box">
             <h4>Our Business Model Is Simple</h4>
             <p>We are building the best chat app on Earth. No ads...</p>
@@ -32,14 +36,43 @@
 </template>
 
 <script>
-export default {}
+export default {
+  mounted() {
+    this.createObserver();
+  },
+  methods: {
+    createObserver() {
+      const options = {
+        root: null,
+        threshold: 0.3
+      };
+
+      // Sélectionne à la fois les éléments .box et .box-dark
+      const boxes = document.querySelectorAll('.box, .box-dark');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-enter-active');
+          }
+        });
+      }, options);
+
+      boxes.forEach(box => {
+        observer.observe(box);
+      });
+    }
+  }
+}
+
+
 </script>
 
 
 <style scoped lang="scss">
 
+/* Base layout styles */
 .container {
-  background-color: #25262D;
+  background: linear-gradient(145deg, var(--color-bgFade1-color),var(--color-bgFade2-color));
   padding: 6% 2% 0;
 }
 
@@ -51,6 +84,7 @@ h1 {
   text-align: center;
 }
 
+/* Boxes layout */
 .boxes {
   display: flex;
   justify-content: space-between;
@@ -65,31 +99,63 @@ h1 {
   flex-direction: column;
 }
 
-.boxes .column .box {
-  background-color: white;
+/* Shared box styles */
+.boxes .column .box, .boxes .column .box-dark {
   border-radius: 25px;
   padding: 4rem;
   margin-bottom: 6%;
+  opacity: 0; /* Set initial opacity for animation */
 }
 
-.boxes .column .box h4 {
+/* Individual box styles */
+.boxes .column .box {
+  background-color: white;
+}
+
+.boxes .column .box-dark {
+  background-color: black;
+  color: rgb(255, 255, 255, .6); /* Apply color directly to .box-dark for all child text */
+}
+
+/* Typography & color */
+.boxes .column .box h4, .boxes .column .box-dark h4 {
   font-size: 1.5rem;
   margin: 0;
   font-weight: 700;
   line-height: 1.5;
-  background-image: linear-gradient(90deg, #9c4ce0, #f98e86);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   text-align: left;
   display: inline-block;
+  color: transparent; /* For gradient text, fallback color */
+  background-image: linear-gradient(90deg, var(--color-fadeText1-color), var(--color-fadeText2-color));
+  -webkit-background-clip: text;
 }
 
-.boxes .column .box p {
-  color: #131b3a;
+.boxes .column .box-dark h4 {
+  color: #FFFFFF; /* Override for .box-dark */
+}
+
+.boxes .column .box p, .boxes .column .box-dark p {
   font-size: 1.36rem;
   line-height: 1.5;
   font-weight: 400;
   margin-top: 3%;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans;
 }
+
+/* Animation */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-enter-active {
+  animation: slideUp 0.5s ease-out forwards;
+}
+
 </style>

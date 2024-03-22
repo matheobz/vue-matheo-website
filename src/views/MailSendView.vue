@@ -77,7 +77,7 @@ h1 {
   font-weight: 700 !important;
   line-height: 1.5;
   display: inline-block;
-  background-image: linear-gradient(90deg, #9c4ce0, #f98e86);
+    background-image: linear-gradient(90deg, var(--color-fadeText1-color), var(--color-fadeText2-color));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

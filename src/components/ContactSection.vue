@@ -1,18 +1,9 @@
 <template>
   <div class="container" id="sectionContact">
+
     <div class="grid">
       <div class="column">
         <h1>Mes coordonnées</h1>
-      </div>
-      <div class="column">
-        <h1>En 2 clicks</h1>
-      </div>
-    </div>
-
-
-    <div class="grid">
-
-      <div class="column">
         <p class="text">
         Envoyez moi un mail et je vous réponderais au plus vite !
         </p>
@@ -34,6 +25,7 @@
       </div>
 
       <div class="column">
+        <h1>En 2 clicks</h1>
         <p class="text">
         Plus rapide pour vous, pareil pour moi :)
         </p>
@@ -107,12 +99,11 @@ export default {
   background-position: center;
   width: 100%;
 
-  background: linear-gradient(220deg,var(--color-bgFade2-color) ,var(--color-bgFade1-color));
+  background: linear-gradient(145deg,var(--color-bgFade2-color) ,var(--color-bgFade1-color));
 
   box-sizing: border-box;
   min-height: 90vh;
 }
-
 
 .loader {
     width: 20px;
@@ -133,12 +124,6 @@ export default {
         transform: rotate(360deg);
     }
     } 
-
-
-
-
-
-
 
 .icon{
   font-size: 1.6rem;
@@ -224,6 +209,7 @@ p{
   color: white;
   font: 500 1.8rem;
   padding-top: 3rem;
+  padding-bottom: 2rem;
 }
 
 .form button {

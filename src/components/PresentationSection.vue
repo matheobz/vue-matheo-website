@@ -131,7 +131,7 @@ h2 {
   font-size: 1.5rem;
   color: white;
   font-weight: 700;
-  margin-top: 1%;
+  margin-top: 7%;
 }
 
 .id p {

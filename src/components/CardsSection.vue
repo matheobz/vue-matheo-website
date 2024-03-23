@@ -72,7 +72,8 @@ export default {
 
 /* Base layout styles */
 .container {
-  background: linear-gradient(145deg, var(--color-bgFade1-color),var(--color-bgFade2-color));
+  background-color: #2d2d38;
+  // background: linear-gradient(145deg, var(--color-bgFade1-color),var(--color-bgFade2-color));/*145*/
   padding: 6% 2% 0;
 }
 

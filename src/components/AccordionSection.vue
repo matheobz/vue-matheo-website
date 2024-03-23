@@ -2,7 +2,7 @@
 
     <div id="container" class="body">
         <main>
-        <h2>Ce que je fait déjà</h2>
+        <h2>5 images pour me découvrir</h2>
             <div class="card lineUp1">
                 <img src="../assets/images/img-theme-1.jpg" alt="" class="image">
                 <img src="../assets/images/img-theme-1.jpg" alt="" class="background">
@@ -30,28 +30,17 @@
             </div>
             
             <div class="card lineUp3">
-                <img src="../assets/images/blog.png" alt="" class="image">
-                <img src="../assets/images/blog-bg.jpg" alt="" class="background">
+                <img src="../assets/images/work-img.jpg" alt="" class="image">
+                <img src="../assets/images/work.jpg" alt="" class="background">
                 <div class="layer">
                     <div class="info">
-                        <h1>Titre</h1>
+                        <h1>Site d'entreprise</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, cumque.</p>
                     </div>
                 </div>
             </div>
-            <div class="card card-3 lineUp4">
-                <img src="../assets/images/data.jpg" alt="" class="image-3">
-                <img class="background-3">
-                <div class="layer">
-                    <div class="info">
-                        <h1>Des sites techique</h1>
-                        <p>Je n'ai pas trouver de meilleur exemple que ce site pour vous présenter un site 
-                            abstract a mon image :)
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="card lineUp5">
+            
+            <div class="card lineUp4">
                 <img src="../assets/images/car.png" alt="" class="image">
                 <video class="background-video" autoplay loop muted>
                     <source src="../assets/videos/backgroundcar.mp4" type="video/mp4">
@@ -62,6 +51,18 @@
                         <h1>Blog, et platforme de partage</h1>
                         <p>Partager votre passion à travert un blog en ligne, ou autre concespt qui n'aurais
                             comme seul limite votre imagination. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-3 lineUp5">
+                <img src="../assets/images/data.jpg" alt="" class="image-3">
+                <img class="background-3">
+                <div class="layer">
+                    <div class="info">
+                        <h1>Votre projet, Ma mission</h1>
+                        <p>project perso, une idée inovante
                         </p>
                     </div>
                 </div>

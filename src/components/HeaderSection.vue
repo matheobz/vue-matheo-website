@@ -2,8 +2,8 @@
 <div class="container">
   <div class="navbar">
     <div class="space-left"></div> <!-- Espace à gauche -->
-    <div class="logo-container">
-      <router-link to="/">Mathéo Développer Web</router-link>
+    <div class="logo-container" >
+      <router-link to="/" class="matheo">Mathéo Développer Web</router-link>
 
     <!-- <img src="../assets/images/m-blanc.png" alt="Logo" class="logo"> -->
     <!-- <img src="../assets/images/logo3.png" class="img-logo" alt="Logo"> -->
@@ -101,14 +101,20 @@ export default {
 }
 
 
-.navbar .logo-container {
+.navbar.logo-container {
     flex: 1;
     display: flex;
+}    
+
+.navbar .logo-container .matheo {
+    color: white;
+    transition: color 0.5s ease; 
 
 }
 
-.navbar .logo-container .logo {
-    height: 80px;
+.navbar .logo-container .matheo:hover {
+    color: var(--color-secondary-color);
+
 }
 
 .navbar .logo-container a {

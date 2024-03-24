@@ -2,7 +2,7 @@
 
     <div id="container" class="body">
         <main>
-        <h2>5 images pour me découvrir</h2>
+        <h2>Ce que je fait déjà</h2>
             <div class="card lineUp1">
                 <img src="../assets/images/img-theme-1.jpg" alt="" class="image">
                 <img src="../assets/images/img-theme-1.jpg" alt="" class="background">

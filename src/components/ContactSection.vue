@@ -156,6 +156,7 @@ p{
   height: 26em;
   width: 26em;
   border-radius: 1rem;
+  margin: 0 0 5% 0;
 }
 
 .form {

@@ -48,13 +48,13 @@ table {
 	--color-secondary-color:rgb(21, 255, 157); /* #6757e7 */
 	--color-third-color:#22b0d3;/* #4958f5 */
 
-	--color-fadeText1-color: #0084ff; /* #4b8aff */
-	--color-fadeText2-color: #00ff9d; /* #26d8c0 */
+	--color-fadeText1-color: #0084ff; /* #4b8aff #0084ff  */
+	--color-fadeText2-color: #00ff9d; /* #26d8c0 #00ff9d */
 
-	--color-bg2-color:   #25262d;
+	--color-bg2-color:   #25262d; /* #25262d */
 
-	--color-bgFade1-color: #112852; /* #090b1f  0d3941*/
-	--color-bgFade2-color: #232338; /* #401355 */
+	--color-bgFade1-color: #112852; /* #090b1f  0d3941 112852*/
+	--color-bgFade2-color: #232338; /* #401355 232338*/
 }
 
 body {

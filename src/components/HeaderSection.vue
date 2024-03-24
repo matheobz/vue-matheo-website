@@ -21,7 +21,7 @@
 
 
     <section class="titre">
-      <h1 class="lineUp">N'imaginez plus votre site <br>Partagez-le</h1>
+      <h1 class="lineUp">N'imaginez plus votre site <br>Créez-le</h1>
     </section>
       
     <a class="button-wrapper" >

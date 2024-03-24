@@ -11,9 +11,7 @@
            
             <br><br>
 
-Agé de 21 ans, je possède un BTS SIO et suis actuellement une Licences en 3eme années post bac. 
-            C'est donc de mon temps libre et par passion que je créer des sites internets afin de m'épanouir et m'enrichire de nouvelle compétances proffessionels.
-           
+            Faire quelque chose de moins scolaire et plus porffessionnel, présenter une entreprise 
             
 
             <br><br>

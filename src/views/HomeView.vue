@@ -1,57 +1,54 @@
 <template>
   <!-- <FenetreSection/> -->
-  
-  <OrbBackground/>
 
-  <HeaderSection/>
+  <OrbBackground />
 
-  <AccordionSection/>
+  <HeaderSection />
 
-  <PresentationSection/>
+  <AccordionSection />
+<!-- 
+  <PresentationSection />
 
-  <CardsSection/>
-    
-  <TechnoSection/>
+  <CardsSection />
 
-  <ContactSection/>
+  <TechnoSection />
 
-  <FooterSection/>
+  <ContactSection />
 
-  <FenetreSection/>
-  
+  <FooterSection />
 
+  <FenetreSection /> -->
 </template>
 
 <script>
-import OrbBackground from '../components/OrbBackground.vue';
-import TechnoSection from '../components/TechnoSection.vue';
-import ContactSection from '../components/ContactSection.vue';
-import CardsSection from '../components/CardsSection.vue';
-import AccordionSection from '../components/AccordionSection.vue';
-import FooterSection from '../components/FooterSection.vue';
-import PresentationSection from '../components/PresentationSection.vue';
-import HeaderSection from '../components/HeaderSection.vue';
+import OrbBackground from "../components/OrbBackground.vue";
+import HeaderSection from "../components/HeaderSection.vue";
+import AccordionSection from "../components/AccordionSection.vue";
+// import TechnoSection from "../components/TechnoSection.vue";
+// import ContactSection from "../components/ContactSection.vue";
+// import CardsSection from "../components/CardsSection.vue";
+// import FooterSection from "../components/FooterSection.vue";
+// import PresentationSection from "../components/PresentationSection.vue";
+
 
 // import FenetreSection from '../components/FenetreSection.vue';
 
 export default {
   components: {
     OrbBackground,
-    CardsSection,
-    TechnoSection,
-    ContactSection,
-    AccordionSection,
-    FooterSection,
-    PresentationSection,
     HeaderSection,
+    AccordionSection,
+    // CardsSection,
+    // TechnoSection,
+    // ContactSection,
+    // FooterSection,
+    // PresentationSection,
+    // HeaderSection
 
     // FenetreSection
-  }
-}
-
-
+  },
+};
 </script>
 
 <style scoped lang="scss">
-
 </style>

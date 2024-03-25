@@ -20,10 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialisation des positions et des vitesses des orbs
     let orbPositions = [
-        { x: 400, y: 100, dx: 0.2, dy: 0.1 },
-        { x: null, y: 50, dx: -0.15, dy: 0.2 },
-        { x: null, y: null, dx: -0.3, dy: -0.2 },
-        { x: 0, y: null, dx: 0.25, dy: -0.2 }
+        { x: 400, y: 100, dx: 0.45, dy: 0.095 },
+        { x: null, y: 50, dx: -0.15, dy: 0.08 },
+        { x: null, y: null, dx: -0.3, dy: -0.09 },
+        { x: 0, y: null, dx: 0.25, dy: -0.07 }
     ];
 
     // Fonction pour mettre à jour la position d'un orb
@@ -114,13 +114,15 @@ $orb-color4: $orb-color1;
 }
 
 .background-orb {
-  width: 100%;
-  height: 55vh;
+  width: 92%;
+  height: 82vh;
   position: absolute;
   margin-top: 30vh;
   display: block;
   filter: blur($orb-blur);
   z-index: -1;
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
 .orb1 {
@@ -137,7 +139,7 @@ $orb-color4: $orb-color1;
 }
 
 .orb4 {
-  @include orb-style(80vh, $orb-color4, 1);
+  @include orb-style(82vh, $orb-color4, 1);
 }
 
 </style>

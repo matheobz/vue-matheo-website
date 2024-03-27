@@ -23,7 +23,7 @@
         </video>
         <div class="layer">
           <div class="info">
-            <h1>Albume photo numérique</h1>
+            <h1>Albume photo</h1>
             <p>
               Pourquoi pas revivre ces souvenirs à travert un format différent
               qui offre la magie des vidéos.
@@ -78,7 +78,6 @@
 </template>
 
 <script>
-
 </script>
 
 
@@ -98,6 +97,7 @@
   filter: brightness(0.25);
   opacity: 0; // Commencez par rendre la vidéo transparente
   transition: opacity 0.5s ease; // Transition douce pour l'apparition
+
 }
 
 .card:hover .background-video {
@@ -325,8 +325,8 @@ main {
   main {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around; // Ajuste l'espacement entre les cartes
-    width: 100%; // Utilise toute la largeur pour un espacement uniforme
+    justify-content: space-around;
+    width: 100%;
     margin-top: 5vh;
   }
   .card {
@@ -368,19 +368,57 @@ main {
 }
 
 @media (max-width: 768px) {
+  #container {
+    height: 1380px;
+  }
+
+  h2 {
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+    margin-top: -45px;
+    position: absolute;
+  }
+
   .card {
-    width: 48%; // Même logique que pour les écrans jusqu'à 992px
+    width: 90%; /* Augmente la largeur des cartes pour mieux remplir l'espace */
+    margin-bottom: 20px; /* Espace entre les cartes */
+  }
+  .card:hover {
+    width: 90%;
+  }
+
+  .card .layer {
+    margin-top: -100px; /* Ajustez selon le besoin */
   }
 }
 
 @media (max-width: 510px) {
-  main {
-    flex-direction: column;
-    align-items: center; // Centre les cartes verticalement
+  #container {
+    height: 900px;
+  }
+  
+  h2 {
+    font-size: 25px;
+  }
+
+  .card .layer {
+    margin-top: -70px; /* Ajustez selon le besoin */
   }
   .card {
-    width: 90%; // Les cartes s'étendent pour occuper plus d'espace
-    margin-bottom: 20px; // Maintient un espace entre les cartes
+    height: 20%;
+    width: 100%; 
+    margin-bottom: 5px;
   }
+  .card:hover {
+    width: 100%;
+    height: 30%;
+  }
+
+  .card .layer {
+    height: 100%;
+    margin-top: -100px;
+  }
+
 }
 </style>

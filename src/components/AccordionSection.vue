@@ -97,7 +97,6 @@
   filter: brightness(0.25);
   opacity: 0; // Commencez par rendre la vidéo transparente
   transition: opacity 0.5s ease; // Transition douce pour l'apparition
-
 }
 
 .card:hover .background-video {
@@ -332,7 +331,7 @@ main {
   .card {
     position: relative;
     width: 48%;
-    height: 48%;
+    height: 40%;
     margin-bottom: 20px;
     overflow: hidden;
   }
@@ -348,7 +347,7 @@ main {
   }
   .card .layer {
     width: 100%;
-    height: 50%;
+    height: 60%;
     margin-top: -110px;
     position: relative;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
@@ -381,8 +380,8 @@ main {
   }
 
   .card {
-    width: 90%; /* Augmente la largeur des cartes pour mieux remplir l'espace */
-    margin-bottom: 20px; /* Espace entre les cartes */
+    width: 90%;
+    margin-bottom: 10px;
   }
   .card:hover {
     width: 90%;
@@ -393,11 +392,12 @@ main {
   }
 }
 
+
 @media (max-width: 510px) {
   #container {
-    height: 900px;
+    height: 830px;
   }
-  
+
   h2 {
     font-size: 25px;
   }
@@ -407,7 +407,7 @@ main {
   }
   .card {
     height: 20%;
-    width: 100%; 
+    width: 100%;
     margin-bottom: 5px;
   }
   .card:hover {
@@ -418,6 +418,9 @@ main {
   .card .layer {
     height: 100%;
     margin-top: -100px;
+  }
+  .card .layer:hover {
+    margin-top: -140px;
   }
 
 }

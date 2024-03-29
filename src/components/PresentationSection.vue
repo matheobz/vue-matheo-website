@@ -69,7 +69,7 @@ export default {
 
 <style scoped lang="scss">
 .container {
-  margin: 200px auto 0 auto;
+  margin: 1em auto 0 auto;
   width: 856px;
   position: relative;
   z-index: 100;
@@ -155,26 +155,98 @@ h2 {
 
 @media (max-width: 992px) {
   .container {
-    width: 80%;
-    margin: 0 auto 0 auto;
+    width: 75%;
+    margin: 0 auto 120px auto;
+  }
+  h2 {
+    font-size: 2rem !important;
+  }
+
+  .presentation {
+    font-size: 1.2rem;
+    margin: 3% 0 40px 0;
+  }
+  .id .pdp img {
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .id .nom h1 {
+    font-size: 1.25rem;
+    margin-top: 6%;
+  }
+
+  .id p {
+    font-size: 1.125rem;
+    margin-top: 6%;
+  }
+  .id .nom {
+    padding-left: 10px;
   }
 }
 
 @media (max-width: 768px) {
-  .id {
-    display: flex;
-    margin-top: 7%;
+  .container {
+    width: 90%;
+    margin: 0 auto 80px auto;
+  }
+  h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .presentation {
+    font-size: 1.125rem;
+    margin: 3% 0 40px 0;
+  }
+
+  .id .pdp img {
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .id .nom h1 {
+    font-size: 1.25rem;
+    margin-top: 6%;
+  }
+
+  .id p {
+    font-size: 1.125rem;
+    margin-top: 6%;
+  }
+  .id .nom {
+    padding-left: 10px;
   }
 }
 
 @media (max-width: 510px) {
-  h2 {
-    font-size: 2em !important;
+  .container {
+    width: 90%;
+    margin: 0 auto 80px auto;
   }
-  
-  .presentation{
-    font-size: 1.35em;
+  h2 {
+    font-size: 1.7rem !important;
+  }
+
+  .presentation {
+    font-size: 1.125rem;
     margin: 3% 0 40px 0;
+  }
+
+  .id .pdp img {
+    border-radius: 50%;
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+
+  .id .nom h1 {
+    font-size: 1rem;
+  }
+
+  .id p {
+    font-size: 0.88rem;
+    margin-top: 8%;
   }
 }
 </style>

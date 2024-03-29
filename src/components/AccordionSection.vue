@@ -114,10 +114,10 @@
 #container {
   display: flex;
   width: 100%;
-  height: 500px;
+  height: 100vh;
   justify-content: center;
   align-items: center;
-  margin-top: 12vh;
+  margin-top: -4%;
 }
 
 .body::before {
@@ -317,8 +317,9 @@ main {
 // Pour les écrans jusqu'à 992px de large
 @media (max-width: 992px) {
   #container {
-    height: 900px;
+    height: 820px;
     align-items: baseline;
+    margin-top: 140px;
   }
 
   main {
@@ -368,7 +369,7 @@ main {
 
 @media (max-width: 768px) {
   #container {
-    height: 1380px;
+    height: 1230px;
   }
 
   h2 {
@@ -392,10 +393,10 @@ main {
   }
 }
 
-
 @media (max-width: 510px) {
   #container {
-    height: 830px;
+    height: 730px;
+    margin-top: 80px;
   }
 
   h2 {
@@ -422,6 +423,5 @@ main {
   .card .layer:hover {
     margin-top: -140px;
   }
-
 }
 </style>

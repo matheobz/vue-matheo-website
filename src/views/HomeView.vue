@@ -16,8 +16,7 @@
   <ContactSection />
 
   <FooterSection />
-
-  <FenetreSection />
+  
 </template>
 
 <script>

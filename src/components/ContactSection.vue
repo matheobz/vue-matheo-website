@@ -343,5 +343,14 @@ button:active > svg > path {
     width: 100%; /* Bouton prend toute la largeur disponible */
     padding: 0.8rem; /* Ajustement du padding pour un look plus adapté */
   }
+
+  .map {
+  min-height: 0px;
+  min-width: 0px;
+  width: 70%;
+  border-radius: 1rem;
+  margin: 0 0 5% 0;
+}
+  
 }
 </style>

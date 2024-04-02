@@ -79,13 +79,13 @@ export default {
   methods: {
     initMenu() {
       const menuBtn = document.querySelector(".menu-btn");
-  const navLinks = document.querySelector(".nav-links");
-  const navbar = document.querySelector(".navbar"); // Sélectionner la navbar
+      const navLinks = document.querySelector(".nav-links");
+      const navbar = document.querySelector(".navbar"); // Sélectionner la navbar
 
-  menuBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("menu-active");
-    navbar.classList.toggle("navbar-active");
-  });
+      menuBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("menu-active");
+        navbar.classList.toggle("navbar-active");
+      });
     },
     handleScroll() {
       const arrow = document.querySelector(".arrow-container");
@@ -301,20 +301,19 @@ h1 {
     align-items: center;
     width: 30% !important;
     transform: translateY(-130vw);
-    transition: transform .3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     z-index: 10;
     border-radius: 10px;
   }
 
   .navbar-active {
-  background-color: black; // Définit le fond en noir
-  z-index: 11; // Assurez-vous que cette valeur est supérieure à celle du menu déroulant
+    background-color: black; // Définit le fond en noir
+    z-index: 11; // Assurez-vous que cette valeur est supérieure à celle du menu déroulant
   }
 
   .menu-active {
     transform: translateX(0%);
   }
-
 
   .navbar .space-left {
     flex: 0.5;
@@ -345,7 +344,6 @@ h1 {
     width: 18px;
   }
 
-  
   .menu-btn {
     display: flex;
   }
@@ -372,7 +370,7 @@ h1 {
   .nav-links a {
     font-size: 20px;
   }
-  
+
   .container,
   .navbar {
     position: relative; /* Ajoutez cette ligne si elle manque */
@@ -401,7 +399,7 @@ h1 {
     align-items: center;
     width: 200px !important;
     transform: translateY(-180vw);
-    transition: transform .3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     z-index: 10;
     border-radius: 10px;
   }
@@ -473,7 +471,7 @@ h1 {
     align-items: center;
     width: 180px !important;
     transform: translateY(-300vw);
-    transition: transform .3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     z-index: 10;
     border-radius: 10px;
   }

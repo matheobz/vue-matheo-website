@@ -22,7 +22,7 @@
         <video class="background-video" autoplay loop muted>
           <source src="../assets/videos/montagne.mp4" type="video/mp4" />
           Votre navigateur ne prend pas en charge la balise vidéo.
-        </video>
+        </video> 
         <div class="layer">
           <div class="info">
             <h1>Albume photo</h1>

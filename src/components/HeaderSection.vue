@@ -4,7 +4,7 @@
       <div class="space-left"></div>
 
       <div class="logo-container">
-        <router-link to="/" class="matheo">Mathéo Développer Web</router-link>
+        <router-link to="/" class="matheo">Mathéo Développer Web_</router-link>
       </div>
 
       <div class="space-middle"></div>

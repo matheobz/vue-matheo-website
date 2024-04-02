@@ -119,6 +119,8 @@ h2 {
   font-size: 1.5rem;
   font-weight: 400;
   margin-top: 2%;
+  margin-right:1% ;
+  margin-left:1% ;
 }
 
 .grid {

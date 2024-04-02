@@ -1,12 +1,10 @@
 <template>
-  <!-- <FenetreSection/> -->
-
   <OrbBackground />
 
   <HeaderSection />
 
   <AccordionSection />
- 
+
   <PresentationSection />
 
   <CardsSection />
@@ -16,7 +14,6 @@
   <ContactSection />
 
   <FooterSection />
-  
 </template>
 
 <script>
@@ -28,10 +25,6 @@ import CardsSection from "../components/CardsSection.vue";
 import TechnoSection from "../components/TechnoSection.vue";
 import ContactSection from "../components/ContactSection.vue";
 import FooterSection from "../components/FooterSection.vue";
-
-
-
-// import FenetreSection from '../components/FenetreSection.vue';
 
 export default {
   components: {

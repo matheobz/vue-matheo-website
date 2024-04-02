@@ -345,9 +345,9 @@ button:active > svg > path {
   }
 
   .map {
-  min-height: 0px;
+  min-height: 300px;
   min-width: 0px;
-  width: 70%;
+  width: 100%;
   border-radius: 1rem;
   margin: 0 0 5% 0;
 }

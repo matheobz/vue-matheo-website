@@ -4,7 +4,7 @@
       <div class="space-left"></div>
 
       <div class="logo-container">
-        <router-link to="/" class="matheo">Mathéo Développer Web_</router-link>
+        <router-link to="/" class="matheo">Mathéo Développer Web</router-link>
       </div>
 
       <div class="space-middle"></div>
@@ -293,13 +293,13 @@ h1 {
   .nav-links {
     position: absolute;
     right: 0;
-    height: 92vh;
+    height: 15vh; /*92vh*/
     top: 8vh;
     background-color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100% !important;
+    width: 40% !important;
     transform: translateY(-130vw);
     transition: transform .3s ease-in-out;
     z-index: 10;
@@ -393,13 +393,13 @@ h1 {
   .nav-links {
     position: absolute;
     right: 0;
-    height: 92vh;
+    height: 15vh;
     top: 8vh;
     background-color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100% !important;
+    width: 40% !important;
     transform: translateY(-180vw);
     transition: transform .3s ease-in-out;
     z-index: 10;
@@ -465,13 +465,13 @@ h1 {
   .nav-links {
     position: absolute;
     right: 0;
-    height: 92vh;
+    height: 13vh;
     top: 8vh;
     background-color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100% !important;
+    width: 40% !important;
     transform: translateY(-300vw);
     transition: transform .3s ease-in-out;
     z-index: 10;

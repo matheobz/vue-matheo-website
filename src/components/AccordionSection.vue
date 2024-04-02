@@ -397,7 +397,7 @@ main {
 
 @media (max-width: 510px) {
   #container {
-    height: 730px;
+    height: 750px;
     margin-top: 80px;
   }
 
@@ -415,7 +415,7 @@ main {
   }
   .card:hover {
     width: 100%;
-    height: 30%;
+    height: 40%;
   }
 
   .card .layer {
@@ -423,7 +423,7 @@ main {
     margin-top: -100px;
   }
   .card .layer:hover {
-    margin-top: -140px;
+    margin-top: -190px;
   }
 }
 </style>

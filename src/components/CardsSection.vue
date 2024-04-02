@@ -4,44 +4,85 @@
     <div class="boxes">
       <div class="column">
         <div class="box">
-          <h4>Open Source Protocol</h4>
+          <h4>Responsive Design</h4>
           <p>
-            Remember this XKCD comic? That’s why we built Beeper Cloud on the
-            open source chat protocol Matrix. Unlike other chat networks, there
-            is no lock-in. You’re free to use open source Matrix clients to
-            connect to Beeper Cloud, or download your data and move to a
-            different Matrix server and continue chatting with your friends on
-            Beeper Cloud. Beeper contributes back to the Matrix community. All
-            of our Matrix bridges are open source on our Github. Don't want to
-            pay for Beeper Cloud? Self-host your own instance for free.
+            À l'ère du numérique, où l'accès à l'information se fait à travers
+            une multitude d'appareils, il est crucial que votre site web offre
+            une expérience utilisateur optimale, quel que soit le dispositif
+            utilisé. C'est là que j'interviens. Grace à une maitrise de mes
+            outils et au sens des finitions au Responsive Design, je m'assure
+            que votre site s'adapte parfaitement à tous les écrans
           </p>
         </div>
         <div class="box">
-          <h4>Powerful Desktop App</h4>
+          <h4>Implémentation technique</h4>
           <p>
-            Most chat apps treat desktop as a second class citizen. Not us! Our
-            desktop app is fast, fully-featured and full of keyboard shortcuts
-            to help you get through your inbox. Beeper Cloud runs on Windows,
-            Mac OS, Linux and Chrome OS.
+            Chaque projet web est une nouvelle aventure et une opportunité
+            d'apprendre et de grandir. Bien que je sois au début de mon parcours
+            dans le développement web, ma détermination à m'adapter et à relever
+            les défis est sans faille. Je m'engage à appliquer une approche
+            personnalisée pour chaque projet, me permettant de développer des
+            solutions qui correspondent à vos besoins uniques, que ce soit en
+            termes d'esthétique ou de fonctionnalité. En me concentrant sur
+            l'acquisition de compétences en développement front-end et back-end
+            et en explorant les dernières technologies, je suis prêt à me lancer
+            dans tout type de projet. Mon objectif est de transformer vos idées
+            en réalités digitales qui non seulement répondent à vos attentes,
+            mais vous surprennent agréablement par leur qualité et leur
+            innovation.
           </p>
         </div>
         <div class="box">
-          <h4>15 Chat Networks - 1 App</h4>
-          <p>Contenu de la boîte 1...</p>
+          <h4>Apprentissage Continu</h4>
+          <p>
+            Le web est un terrain de jeu qui évolue à toute vitesse, et moi
+            aussi. Je suis un jeune développeur passionné par ce que je fais, et
+            je crois fermement dans la force de l'apprentissage continu. Pour
+            moi, il s'agit moins de savoir tout sur tout que de rester curieux
+            et ouvert aux nouvelles idées et technologies. Je m'efforce
+            d'apprendre quelque chose de nouveau chaque jour, pour que mes
+            projets ne soient pas juste à la pointe, mais aussi réfléchis et
+            innovants.
+          </p>
         </div>
       </div>
       <div class="column">
         <div class="box">
-          <h4>Secure Encrypted Chat</h4>
-          <p>Privacy is a fundamental human right...</p>
+          <h4>Optimisation de Performance</h4>
+          <p>
+            L'optimisation de la performance est au cœur de ma démarche de
+            développement, surtout dans un univers web où chaque seconde compte.
+            Utilisant Vue.js pour construire mes sites, je m'assure non
+            seulement que vos pages chargent rapidement, mais aussi qu'elles
+            offrent une expérience utilisateur fluide et réactive sur tous les
+            appareils. Je porte une attention particulière à l'efficacité du
+            code, à la réduction des temps de chargement et à l'optimisation des
+            ressources pour garantir que vos visiteurs accèdent à votre contenu
+            sans délai. Mon objectif ? Faire en sorte que votre site soit non
+            seulement beau et fonctionnel, mais également performant, pour que
+            vos utilisateurs et les moteurs de recherche vous placent en tête de
+            liste.
+          </p>
         </div>
         <div class="box-dark">
           <h4>Dark Mode</h4>
           <p>Toujours un plus pour le conford utilisateur</p>
         </div>
         <div class="box">
-          <h4>Our Business Model Is Simple</h4>
-          <p>We are building the best chat app on Earth. No ads...</p>
+          <h4>Communication</h4>
+          <p>
+            Une communication claire et directe est essentielle pour transformer
+            une idée en un projet réussi. C'est pourquoi je mets un point
+            d'honneur à établir un dialogue ouvert et honnête avec chacun de mes
+            clients. En me concentrant sur l'écoute de vos besoins et en
+            partageant des mises à jour régulières, je m'assure que nous sommes
+            toujours sur la même longueur d'onde. Cette approche me permet de
+            capturer précisément votre vision et de l'adapter en solutions web
+            qui répondent exactement à vos attentes. Pour moi, une bonne
+            communication n'est pas juste une partie du processus ; c'est le
+            cœur même de la réussite de chaque projet. Ensemble, faisons de
+            votre vision une réalité.
+          </p>
         </div>
       </div>
     </div>

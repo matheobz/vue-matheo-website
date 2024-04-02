@@ -293,13 +293,13 @@ h1 {
   .nav-links {
     position: absolute;
     right: 0;
-    height: 15vh; /*92vh*/
+    height: 200px; /*92vh*/
     top: 8vh;
     background-color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40% !important;
+    width: 30% !important;
     transform: translateY(-130vw);
     transition: transform .3s ease-in-out;
     z-index: 10;
@@ -393,13 +393,13 @@ h1 {
   .nav-links {
     position: absolute;
     right: 0;
-    height: 15vh;
+    height: 200px;
     top: 8vh;
     background-color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40% !important;
+    width: 200px !important;
     transform: translateY(-180vw);
     transition: transform .3s ease-in-out;
     z-index: 10;
@@ -465,13 +465,13 @@ h1 {
   .nav-links {
     position: absolute;
     right: 0;
-    height: 13vh;
+    height: 180px;
     top: 8vh;
     background-color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40% !important;
+    width: 180px !important;
     transform: translateY(-300vw);
     transition: transform .3s ease-in-out;
     z-index: 10;

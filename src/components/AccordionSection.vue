@@ -1,17 +1,16 @@
 <template>
   <div id="container" class="body">
     <main>
-      <h2>Ce que je fait déjà</h2>
+      <h2>Projets</h2>
       
       <div class="card lineUp1">
         <img src="../assets/images/food.jpg" alt="" class="image" />
         <img src="../assets/images/restaurant.jpg" alt="" class="background" />
         <div class="layer">
           <div class="info">
-            <h1>Site pour Restaurant</h1>
+            <h1>Restauration</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-              cumque.
+              Conception de site pour votre restaurant : présentez votre menu et ambiance pour donner un avant-goût à vos clients.
             </p>
           </div>
         </div>
@@ -25,10 +24,9 @@
         </video> 
         <div class="layer">
           <div class="info">
-            <h1>Albume photo</h1>
+            <h1>Album photos</h1>
             <p>
-              Pourquoi pas revivre ces souvenirs à travert un format différent
-              qui offre la magie des vidéos.
+              Pourquoi pas revivre ces souvenirs, au travers d'un format différent qui offre la magie des vidéos.
             </p>
           </div>
         </div>

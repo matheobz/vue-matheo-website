@@ -4,7 +4,7 @@
       <div class="space-left"></div>
 
       <div class="logo-container">
-        <router-link to="/" class="matheo">Mathéo Développer Web</router-link>
+        <router-link to="/" class="matheo">Mathéo Berrez</router-link>
       </div>
 
       <div class="space-middle"></div>
@@ -18,12 +18,12 @@
         <a
           class="texte-souligne"
           onclick="document.getElementById('sectionCompetance').scrollIntoView({ behavior: 'smooth' });"
-          >Compétences</a
+          >Services</a
         >
         <a
           class="texte-souligne"
           onclick="document.getElementById('sectionTechno').scrollIntoView({ behavior: 'smooth' });"
-          >Technologies</a
+          >Compétences</a
         >
         <a
           class="texte-souligne"
@@ -102,6 +102,11 @@ export default {
 
 
 <style scoped lang="scss">
+.container{
+
+}
+
+
 .texte-souligne {
   display: inline-block;
   position: relative;
@@ -129,6 +134,7 @@ export default {
 .navbar {
   padding-top: 2.5%;
   display: flex;
+  // position: fixed;
 }
 
 .navbar .space-left {

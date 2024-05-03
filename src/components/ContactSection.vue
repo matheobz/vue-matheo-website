@@ -2,11 +2,11 @@
   <div class="container" id="sectionContact">
     <div class="grid">
       <div class="column">
-        <h1>Mes coordonnées</h1>
-        <p>
+        <h1>Localisation</h1>
+        <!-- <p>
           <span class="material-symbols-outlined icon">mail</span>
           matheoberrez@gmail.com
-        </p>
+        </p> -->
         <p>
           <span class="material-symbols-outlined icon">person_pin_circle</span>
           Nantes
@@ -23,8 +23,8 @@
       </div>
 
       <div class="column">
-        <h1>En 2 clicks</h1>
-        <p class="text">Plus rapide pour vous, pareil pour moi :)</p>
+        <h1>Contact</h1> 
+        <p class="text">Réponse dans les plus bref délais</p>
         <div class="form">
           <form
             action="https://formsubmit.co/4dd6801f8e459ca1d130c3f8ec9c9e88"

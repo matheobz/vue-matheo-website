@@ -3,7 +3,7 @@
   <footer id="footer">
 
         <p>© Tout droit réservé</p>
-        <p>Dèreniere mise à jour, Avril 2024.</p>
+        <p>Dernière mise à jour, Avril 2024.</p>
         <p>Mathéo</p>
 
   </footer>

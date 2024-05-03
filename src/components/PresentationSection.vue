@@ -1,29 +1,25 @@
 <template>
   <div id="sectionPresentation" class="invisible" style="margin-top: -3%"></div>
   <div class="animate-enter container" ref="prensentationRef">
-    <h2>
-      Je me présente, Mathéo <span style="white-space: nowrap">et vous ?</span>
-    </h2>
+    <h2>Qui suis-je ?</h2>
     <p class="presentation">
-      Je suis un développeur, basé à Nantes, avec un parcours riche et
-      diversifié qui m'a conduit à maîtriser les nuances de l'informatique et,
-      plus précisément, du développement sur internet.
+      En tant qu'architecte digital freelance, mon travail consiste à propulser
+      votre entreprise dans le dynamisme de l'ère numérique. Façonnons ensemble
+      des expériences web distinctives, qui mettent en avant vos idées et
+      stimulent la croissance de votre activité.
       <br /><br />
-
-      Agé de 21 ans, je possède un BTS SIO et suis actuellement une Licences en
-      3eme années post bac. C'est donc de mon temps libre et par passion que je
-      créer des sites internets afin de m'épanouir et m'enrichire de nouvelle
-      compétances proffessionels.
-
+      Mon approche est fondée sur la collaboration. Ensemble, plongeons au
+      cœur de vos besoins pour forger des solutions web sur mesure, esthétiques
+      et fonctionnelles. De l'ébauche à la mise en ligne je vous accompagne, chaque phase est
+      méticuleusement orchestrée pour que votre site incarne véritablement
+      l'esprit de votre marque.
       <br /><br />
-
-      Faire quelque chose de moins scolaire et plus porffessionnel, présenter
-      une entreprise
-
+      Je mets à votre disposition l'ensemble de ma créativité et mon
+      savoir-faire technique, afin d'élaborer des sites internet réactifs et
+      intuitifs. L'objectif est de Vous livrer un site qui capte l'essence de
+      votre entreprise mais aussi celle de votre public cible.
       <br /><br />
-      <b>Votre satisfaction est ma priorité.</b> Je m'engage à respecter les
-      délais, à assurer une communication claire et à fournir un support fiable
-      après la mise en ligne.
+      Pour toute demande, idée innovante ou pour un simple renseignement n'hesiter a me contacter.
     </p>
     <div class="id">
       <div class="pdp">

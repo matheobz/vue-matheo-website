@@ -1,7 +1,7 @@
 <template>
   <div class="container" id="sectionTechno">
-    <h1>Technologie maitrisé</h1>
-    <h2>Étudier dans le cadre de mes études ou en perso !</h2>
+    <h1>Compétences maîtrisées</h1>
+    <h2></h2>
 
     <div class="grid">
       <div class="logo-container">

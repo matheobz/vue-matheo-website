@@ -8,18 +8,19 @@
       des expériences web distinctives, qui mettent en avant vos idées et
       stimulent la croissance de votre activité.
       <br /><br />
-      Mon approche est fondée sur la collaboration. Ensemble, plongeons au
-      cœur de vos besoins pour forger des solutions web sur mesure, esthétiques
-      et fonctionnelles. De l'ébauche à la mise en ligne je vous accompagne, chaque phase est
-      méticuleusement orchestrée pour que votre site incarne véritablement
-      l'esprit de votre marque.
+      Mon approche est fondée sur la collaboration. Ensemble, plongeons au cœur
+      de vos besoins pour forger des solutions web sur mesure, esthétiques et
+      fonctionnelles. De l'ébauche à la mise en ligne, je vous accompagne tout
+      au long de votre projet. Chaque phase est méticuleusement orchestrée pour
+      que votre site incarne véritablement l'esprit de votre marque.
       <br /><br />
       Je mets à votre disposition l'ensemble de ma créativité et mon
       savoir-faire technique, afin d'élaborer des sites internet réactifs et
-      intuitifs. L'objectif est de Vous livrer un site qui capte l'essence de
-      votre entreprise mais aussi celle de votre public cible.
+      intuitifs. L'objectif est de vous livrer un site qui capte l'essence de
+      votre entreprise, mais aussi celle de votre public cible.
       <br /><br />
-      Pour toute demande, idée innovante ou pour un simple renseignement n'hésiter à me contacter.
+      Pour toute demande, idée innovante ou pour un simple renseignement,
+      n'hésitez à me contacter.
     </p>
     <div class="id">
       <div class="pdp">

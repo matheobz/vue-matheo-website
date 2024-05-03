@@ -2,7 +2,7 @@
   <div id="container" class="body">
     <main>
       <h2>Projets</h2>
-      
+
       <div class="card lineUp1">
         <img src="../assets/images/food.jpg" alt="" class="image" />
         <img src="../assets/images/restaurant.jpg" alt="" class="background" />
@@ -10,7 +10,8 @@
           <div class="info">
             <h1>Restauration</h1>
             <p>
-              Conception de site pour votre restaurant : présentez votre menu et ambiance pour donner un avant-goût à vos clients.
+              Conception de site pour votre restaurant : présentez votre menu et
+              ambiance pour donner un avant-goût à vos clients.
             </p>
           </div>
         </div>
@@ -21,12 +22,13 @@
         <video class="background-video" autoplay loop muted>
           <source src="../assets/videos/montagne.mp4" type="video/mp4" />
           Votre navigateur ne prend pas en charge la balise vidéo.
-        </video> 
+        </video>
         <div class="layer">
           <div class="info">
             <h1>Album photos</h1>
             <p>
-              Pourquoi pas revivre ces souvenirs, au travers d'un format différent qui offre la magie des vidéos.
+              Pourquoi pas revivre ces souvenirs, au travers d'un format
+              différent qui offre la magie des vidéos.
             </p>
           </div>
         </div>
@@ -55,20 +57,26 @@
           <div class="info">
             <h1>Blog</h1>
             <p>
-              Partager votre passion à travert un blog en ligne, ou autre
-              concespt qui n'aurais comme seul limite votre imagination.
+              Partager votre passion à travers un blog en ligne, ou autre
+              concespt qui n'aurais comme seule limite votre imagination.
             </p>
           </div>
         </div>
       </div>
 
-      <div class="card card-3 lineUp5">
-        <img src="../assets/images/data.jpg" alt="" class="image-3" />
-        <img class="background-3" />
+      <div class="card lineUp4">
+        <img src="../assets/images/car.png" alt="" class="image" />
+        <video class="background-video" autoplay loop muted>
+          <source src="../assets/videos/backgroundcar.mp4" type="video/mp4" />
+          Votre navigateur ne prend pas en charge la balise vidéo.
+        </video>
         <div class="layer">
           <div class="info">
-            <h1>Votre projet, Ma mission</h1>
-            <p>project perso, une idée inovante</p>
+            <h1>Blog</h1>
+            <p>
+              Partager votre passion au travert d'un blog en ligne, ou d'un
+              concept qui n'aurait comme seule limite, votre imagination.
+            </p>
           </div>
         </div>
       </div>

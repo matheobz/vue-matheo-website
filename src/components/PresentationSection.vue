@@ -19,7 +19,7 @@
       intuitifs. L'objectif est de Vous livrer un site qui capte l'essence de
       votre entreprise mais aussi celle de votre public cible.
       <br /><br />
-      Pour toute demande, idée innovante ou pour un simple renseignement n'hesiter a me contacter.
+      Pour toute demande, idée innovante ou pour un simple renseignement n'hésiter à me contacter.
     </p>
     <div class="id">
       <div class="pdp">

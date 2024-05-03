@@ -102,11 +102,6 @@ export default {
 
 
 <style scoped lang="scss">
-.container{
-
-}
-
-
 .texte-souligne {
   display: inline-block;
   position: relative;

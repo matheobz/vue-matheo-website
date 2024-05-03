@@ -1,8 +1,8 @@
 <template>
   <div id="container" class="body">
     <main>
-      <h2>Ce que je fait déjà</h2>
-
+      <h2>Projets</h2>
+      
       <div class="card lineUp1">
         <img src="../assets/images/food.jpg" alt="" class="image" />
         <img src="../assets/images/restaurant.jpg" alt="" class="background" />
@@ -10,8 +10,7 @@
           <div class="info">
             <h1>Restauration</h1>
             <p>
-              Conception de site pour votre restaurant : présentez votre menu et
-              ambiance pour donner un avant-goût à vos clients.
+              Conception de site pour votre restaurant : présentez votre menu et ambiance pour donner un avant-goût à vos clients.
             </p>
           </div>
         </div>
@@ -22,10 +21,10 @@
         <video class="background-video" autoplay loop muted>
           <source src="../assets/videos/montagne.mp4" type="video/mp4" />
           Votre navigateur ne prend pas en charge la balise vidéo.
-        </video>
+        </video> 
         <div class="layer">
           <div class="info">
-            <h1>Albume photo</h1>
+            <h1>Album photos</h1>
             <p>
               Pourquoi pas revivre ces souvenirs, au travers d'un format différent qui offre la magie des vidéos.
             </p>
@@ -56,8 +55,8 @@
           <div class="info">
             <h1>Blog</h1>
             <p>
-              Partager votre passion au travert d'un blog en ligne, ou d'un
-              concept qui n'aurait comme seule limite, votre imagination.
+              Partager votre passion à travert un blog en ligne, ou autre
+              concespt qui n'aurais comme seul limite votre imagination.
             </p>
           </div>
         </div>
@@ -68,8 +67,8 @@
         <img class="background-3" />
         <div class="layer">
           <div class="info">
-            <h1>Votre projet, ma mission</h1>
-            <p>Aucun défi n'est trop grand, chaque projet mérite son site internet</p>
+            <h1>Votre projet, Ma mission</h1>
+            <p>project perso, une idée inovante</p>
           </div>
         </div>
       </div>
